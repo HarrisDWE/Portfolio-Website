@@ -55,6 +55,10 @@ h1 {
     margin: 0;
 }
 
+
+/* ---------------------
+    Home page styling
+--------------------- */ 
 /* Need to get this properly aligned vertically */
 .header-social-links img {
     max-height: 3.5rem; /* Tied to the font-size of the h1 */
@@ -83,3 +87,16 @@ h1 {
 .intro-contact {
     margin-top: 4rem;
 }
+
+/* ---------------------
+    Projects page styling
+--------------------- */ 
+
+
+/* ---------------------
+    CV page styling
+--------------------- */ 
+
+/* ---------------------
+    Contact page styling
+--------------------- */ 
