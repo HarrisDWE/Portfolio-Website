@@ -1,0 +1,63 @@
+body {
+    font-family: "Raleway", "sans-serif";
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: rgb(32, 48, 64);
+    
+    background: ghostwhite;
+    margin: 1rem;
+}
+
+body a {
+    color: rgb(32, 48, 64);
+}
+
+header {
+    
+}
+
+nav {
+    width: 100%;
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    list-style-type: none;
+    
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+nav ul a:visited {
+    color: rgb(32, 48, 64);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.header-home a {
+    text-decoration: none;
+}
+
+.intro-container a {
+    color: rgb(240, 84, 84);
+}
