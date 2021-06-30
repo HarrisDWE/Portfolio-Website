@@ -55,6 +55,14 @@ h1 {
     margin: 0;
 }
 
+footer {
+    display: block;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+footer a {
+    color: rgb(240, 84, 84);
+}
 
 /* ---------------------
     Home page styling
@@ -86,6 +94,15 @@ h1 {
 
 .intro-contact {
     margin-top: 4rem;
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    margin: 1rem 0;
 }
 
 /* ---------------------
