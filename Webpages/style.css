@@ -22,7 +22,7 @@ header a {
 }
 
 nav {
-    margin: 1.5rem 0;
+    margin: 2rem 0;
     font-size: 2rem;
 }
 nav ul {
@@ -96,6 +96,14 @@ h1 {
 /* ---------------------
     CV page styling
 --------------------- */ 
+.cv-container a {
+    color: rgb(240, 84, 84);
+}
+/* TODO: Refine this - don't have set px values for height - got to bottom of screen */
+.cv-viewer {
+    width: 100%;
+    height: 800px;
+}
 
 /* ---------------------
     Contact page styling

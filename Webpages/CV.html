@@ -42,7 +42,17 @@
         </nav>
         
         <main>
-            <h2>CV page</h2>
+            <div class="cv-container">
+                <p class="cv-downloads">
+                    Download CV as:
+                    <a href="../Documents/Test.pdf" download>pdf</a>
+                    |
+                    <a href="../Documents/Test.docx">docx</a>
+                </p>
+                <!-- Auto imports a PDF Viewer -->
+                <object data="../Documents/Test.pdf" type='application/pdf' class="cv-viewer"></object>
+            </div>
+
         </main>
     </body>
 </html>
