@@ -119,7 +119,7 @@ footer a {
 /* TODO: Refine this - don't have set px values for height - got to bottom of screen */
 .cv-viewer {
     width: 100%;
-    height: 800px;
+    height: 75vh;
 }
 
 /* ---------------------
