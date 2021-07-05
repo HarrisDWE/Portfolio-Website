@@ -45,10 +45,9 @@ nav ul a:visited {
     color: rgb(32, 48, 64);
 }
 
-/* main {
-    display: flex;
-    justify-content: center;
-} */
+main {
+    margin-top: 3rem;
+}
 
 h1 {
     font-size: 3.5rem;
@@ -64,9 +63,6 @@ footer a {
     color: rgb(240, 84, 84);
 }
 
-/* ---------------------
-    Home page styling
---------------------- */ 
 /* Need to get this properly aligned vertically */
 .header-social-links img {
     max-height: 3.5rem; /* Tied to the font-size of the h1 */
@@ -75,11 +71,26 @@ footer a {
     margin: 0 .25rem;
 }
 
+.p-links {
+    color: rgb(240, 84, 84);
+    font-weight: 600;
+}
+
+.footer-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links {
+    margin: 1rem 0;
+}
+
+/* ---------------------
+    Home page styling
+--------------------- */ 
+
 .intro-container {
     font-weight: 2rem;
-}
-.intro-container a {
-    color: rgb(240, 84, 84);
 }
 
 .intro-greeting {
@@ -94,15 +105,6 @@ footer a {
 
 .intro-contact {
     margin-top: 4rem;
-}
-
-.footer-contents {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer-links {
-    margin: 1rem 0;
 }
 
 /* ---------------------
@@ -124,4 +126,72 @@ footer a {
 
 /* ---------------------
     Contact page styling
---------------------- */ 
+--------------------- */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+}
+.contact-form-container form {
+    width: 100%;
+}
+.contact-form-container form label {
+    margin-bottom: .5rem;
+}
+
+.contact-form-text-input-containter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.contact-form-input {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.contact-form-input input[type=text] {
+    padding: 12px 20px;
+    box-sizing: border-box;
+    
+    background-color: #f8f8f8;
+    border-color: rgb(32, 48, 64);
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+#contact-form-textarea {
+    margin-top: 1rem;
+}
+#contact-form-textarea textarea {
+    width: 100%;
+    height: 25vh;
+    padding: 12px 20px;
+    display: block;
+    box-sizing: border-box;
+    resize: none;
+    margin-top: 0.5rem;
+
+    background-color: #f8f8f8;
+    border-color:rgb(32, 48, 64);
+    border-radius: 3px;
+    border-width: 1px;
+}
+
+#contact-form-submit-btn {
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    background-color: rgb(240, 84, 84);
+    border-color: rgb(240, 84, 84);
+    border-width: 2px;
+    border-radius: 3px;
+    border-style: solid;
+    
+    font-size: 1.25rem;
+    color: white;
+}
+
+#contact-form-submit-btn:hover {
+    background-color: rgb(216, 65, 65);
+    border-color: rgb(216, 65, 65);
+}
