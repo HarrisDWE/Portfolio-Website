@@ -54,6 +54,12 @@ h1 {
     margin: 0;
 }
 
+h3
+{
+    margin-top: 0;
+    font-size: 2rem;
+}
+
 footer {
     display: block;
     font-size: 1rem;
@@ -110,7 +116,42 @@ footer a {
 /* ---------------------
     Projects page styling
 --------------------- */ 
+.project-card-container {
+    /* color: white; */
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
 
+.project-card {
+    background: rgb(209, 225, 230);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+}
+
+.project-card-image {
+    max-width: 100%;
+}
+
+
+/* Testing */
+.test-project-card-container {
+    background: rgb(209, 225, 230);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    color: white;
+    
+}
+.test-project-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+.test-project-card-main{
+    max-width: 48%;
+}
+.test-project-card-desc {
+    max-width: 48%;
+    margin-left: 2rem;
+}
 
 /* ---------------------
     CV page styling
