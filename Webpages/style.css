@@ -118,14 +118,11 @@ footer a {
 --------------------- */ 
 .project-card-container {
     /* color: white; */
-    font-size: 1.25rem;
-    margin-bottom: 3rem;
-}
-
-.project-card {
     background: rgb(209, 225, 230);
     padding: 1rem 2rem;
     border-radius: 4px;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
 }
 
 .project-card-image {
@@ -138,7 +135,9 @@ footer a {
     background: rgb(209, 225, 230);
     padding: 1rem 2rem;
     border-radius: 4px;
+    font-size: 1.25rem;
     color: white;
+    margin-bottom: 3rem;
     
 }
 .test-project-card {
