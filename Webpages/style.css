@@ -57,7 +57,7 @@ h1 {
 h3
 {
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 2.25rem;
 }
 
 footer {
@@ -132,13 +132,15 @@ footer a {
 
 /* Testing */
 .test-project-card-container {
-    background: rgb(209, 225, 230);
+    background: rgb(240, 84, 84);
     padding: 1rem 2rem;
     border-radius: 4px;
     font-size: 1.25rem;
     color: white;
     margin-bottom: 3rem;
-    
+}
+.test-project-card-container .p-links {
+    color: rgb(32, 48, 64);
 }
 .test-project-card {
     display: flex;
