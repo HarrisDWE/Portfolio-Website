@@ -1,4 +1,5 @@
-projectsData = '[{
+[
+    {
     "name" : "Testing JSON", 
     "description" : "this is an example description",
     "tech" : "currently just text, but will change to images later",
@@ -7,6 +8,5 @@ projectsData = '[{
     "linkText" : "Example Link",
     "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     
-}]';
-
-//This is bad don't do this
+    }
+]

@@ -1,27 +1,20 @@
 window.addEventListener("DOMContentLoaded", createProjects);
 
+
 function createProjects() {
     //Loading from "JSON" test - need to change how it is loaded, it is currently effective a JS document with a var
     //let projectsJSON = JSON.parse(projectsData);
     //This is for testing and it doesn't work anyway
-    let projectsData = '{ "projects" : [' +
-        '{ "name" : "Testing JSON"},' + 
-        '{ "description" : "this is an example description" },' + 
-        '{ "tech" : "currently just text, but will change to images later" },' +
-        '{ "imageSrc" : "Test-Image.png" },' +
-        '{ "imageAlt" : "This is alt text" },' +
-        '{ "linkText" : "Example Link" },' +
-        '{ "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ" } ]}';
-
-    const projectsJSON = JSON.parse(projectsData);
-
-    projectPageElements = createElements();
+    $.getJSON("Projects.json", function(data) {
+        //const projects = data.projects;
         
-    addContent(projectsJSON, projectPageElements[0], projectPageElements[1], projectPageElements[2], projectPageElements[3]);
-    addToDOM(projectPageElements[4]);
-    
+        data.forEach(project => {
+            projectPageElements = createElements();
+            addContent(project, projectPageElements[0], projectPageElements[1], projectPageElements[2], projectPageElements[3]);
+            addToDOM(projectPageElements[4]);
+        });
+    });
 }
-
 
 function createElements() {
     //Define key variables
