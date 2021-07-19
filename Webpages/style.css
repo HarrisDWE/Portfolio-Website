@@ -15,6 +15,7 @@ body a {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 2rem 0;
 }
 header a {
@@ -69,11 +70,8 @@ footer a {
     color: rgb(240, 84, 84);
 }
 
-/* Need to get this properly aligned vertically */
 .header-social-links img {
     max-height: 3.5rem; /* Tied to the font-size of the h1 */
-    vertical-align: middle;
-
     margin: 0 .25rem;
 }
 
