@@ -1,0 +1,66 @@
+header {
+    display: block;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.header-social-links img {
+    max-height: 2.25rem; /* Tied to the font-size of the h1 */
+}
+
+#burger-container {
+    background-color: rgb(7, 8, 8, .1);
+    /* padding: .25rem 1.25rem .25rem 1.25rem; */     /* Steam deck esc. */
+    padding: .5rem .75rem .5rem .75rem; 
+    border-radius: 4px;
+}
+
+.burger-line {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(32, 48, 64);
+    margin: 6px 0;
+}
+
+.burger-dropdown-container {
+    display: block;
+    min-width: 100%;
+    padding: 1rem .5rem 1rem .5rem;
+}
+.burger-dropdown {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(7, 8, 8, .1);
+}
+
+#hamburgerLinks a {
+    color: rgb(32, 48, 64);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0.75rem 0.25rem;
+    border-bottom: 1px solid rgb(32, 48, 64);
+}
