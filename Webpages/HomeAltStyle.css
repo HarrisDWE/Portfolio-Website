@@ -48,7 +48,7 @@ h1 {
 }
 
 #burger-dropdown-container {
-    display: block;
+    display: none;
     min-width: 100%;
     padding: 1rem .5rem 1rem .5rem;
 }
@@ -68,6 +68,36 @@ h1 {
     padding: 0.75rem 0.5rem;
     border-bottom: 1px solid rgb(32, 48, 64);
     margin: 0 0.5rem 0 0.5rem;
+}
+
+.burger-collapsed {
+    display: none;
+}
+
+.burger-expanded {
+    display: block
+}
+
+.partition {
+    padding: 5vh 5.5vw 5vh 5.5vw;
+    background: #1B1B1B;
+    color: ghostwhite;
+}
+
+.partition-inverted {
+    padding: 5vh 5.5vw 5vh 5.5vw;
+}
+
+.homepage-button {
+    /* float: right; */
+}
+
+
+/* Fix issue where if the dropdown is active it will keep open regardless of the size of the pagae */
+@media screen and (min-width: 1025px) {
+    #burger-dropdown-container{
+        display: none; 
+    }    
 }
 
 @media only screen and (max-width: 1024px) {

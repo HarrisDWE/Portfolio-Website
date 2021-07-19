@@ -70,6 +70,23 @@ footer a {
     color: rgb(240, 84, 84);
 }
 
+button {
+    padding: 0.75rem 1.5rem;
+    margin: 1rem 0;
+    background-color: rgb(240, 84, 84);
+    border-color: rgb(240, 84, 84);
+    border-width: 2px;
+    border-radius: 3px;
+    border-style: solid;
+    
+    font-size: 1.25rem;
+    color: white;
+}
+button:hover {
+    background-color: rgb(216, 65, 65);
+    border-color: rgb(216, 65, 65);
+}
+
 .header-social-links img {
     max-height: 3.5rem; /* Tied to the font-size of the h1 */
     margin: 0 .25rem;
@@ -218,7 +235,7 @@ footer a {
     border-width: 1px;
 }
 
-#contact-form-submit-btn {
+/* #contact-form-submit-btn {
     padding: 0.75rem 1.5rem;
     margin: 1rem 0;
     background-color: rgb(240, 84, 84);
@@ -234,4 +251,4 @@ footer a {
 #contact-form-submit-btn:hover {
     background-color: rgb(216, 65, 65);
     border-color: rgb(216, 65, 65);
-}
+} */
