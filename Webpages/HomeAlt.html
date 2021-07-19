@@ -9,6 +9,8 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="HomeAltStyle.css">
 
+        <script src="../Scripts/Hamburger.js"></script>
+
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,7 +42,7 @@
                     </a>
                 </div>
               
-                <a href="" id="burger">
+                <a id="burger" href="javascript:void(0);" onclick="hamburgerControl()">
                     <div id="burger-container">
                         <div class="burger-line"></div>
                         <div class="burger-line"></div>
@@ -50,19 +52,12 @@
             </div>
             
 
-            <div burger-dropdown-container>
-                <div class="burger-dropdown">
-                    <!-- <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Projects.html">Projects</a></li>
-                        <li><a href="CV.html">CV</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </ul> -->
-    
-                    <a href="index.html">Home</a>
-                    <a href="Projects.html">Projects</a>
-                    <a href="CV.html">CV</a></li>
-                    <a href="Contact.html">Contact</a>
+            <div id="burger-dropdown-container">
+                <div id="burger-dropdown">
+                    <a class="burger-links" href="index.html">Home</a>
+                    <a class="burger-links" href="Projects.html">Projects</a>
+                    <a class="burger-links" href="CV.html">CV</a></li>
+                    <a class="burger-links" href="Contact.html">Contact</a>
                 </div>
             </div>
         </header>
@@ -101,5 +96,8 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Scripts -->
+        <!-- <script src="../Scripts/Hamburger.js"></script> -->
     </body>
 </html>
