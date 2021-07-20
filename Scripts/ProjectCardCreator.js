@@ -2,6 +2,11 @@ window.addEventListener("DOMContentLoaded", createProjects);
 
 
 function createProjects() {
+    fetch(".ProjectsTEST.json")
+        .then(response => response.json())
+        .then(data => addData(data))
+        .catch(err => console.log("JSON load error:" + err))
+    
     //Testing
     addData([{
         "name" : "Testing JSON", 
