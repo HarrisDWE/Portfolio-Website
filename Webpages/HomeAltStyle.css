@@ -1,0 +1,111 @@
+header {
+    display: block;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.header-social-links img {
+    max-height: 2.25rem; /* Tied to the font-size of the h1 */
+}
+
+#burger {
+    display: none;
+}
+
+#burger-container {
+    background-color: rgb(7, 8, 8, .1);
+    /* padding: .25rem 1.25rem .25rem 1.25rem; */     /* Steam deck esc. */
+    padding: .5rem .75rem .5rem .75rem; 
+    border-radius: 4px;
+}
+
+.burger-line {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(32, 48, 64);
+    margin: 6px 0;
+}
+
+#burger-dropdown-container {
+    display: none;
+    min-width: 100%;
+    padding: 1rem .5rem 1rem .5rem;
+}
+#burger-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(7, 8, 8, 0.05);
+    border-radius: 4px;
+}
+
+.burger-links {
+    color: rgb(32, 48, 64);
+    /* text-align: center; */
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid rgb(32, 48, 64);
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.burger-collapsed {
+    display: none;
+}
+
+.burger-expanded {
+    display: block
+}
+
+.partition {
+    padding: 5vh 5.5vw 5vh 5.5vw;
+    background: #1B1B1B;
+    color: ghostwhite;
+}
+
+.partition-inverted {
+    padding: 5vh 5.5vw 5vh 5.5vw;
+}
+
+.homepage-button {
+    
+}
+
+
+/* Fix issue where if the dropdown is active it will keep open regardless of the size of the pagae */
+@media screen and (min-width: 1025px) {
+    #burger-dropdown-container{
+        display: none; 
+    }    
+}
+
+@media only screen and (max-width: 1024px) {
+    #burger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+}
