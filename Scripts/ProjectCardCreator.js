@@ -40,11 +40,8 @@ function createProjects() {
 
 function addData(data) {
     data.forEach(project => {
-        projectPageElements = createElements();
-        addContent(project, projectPageElements[0], projectPageElements[1], projectPageElements[2], projectPageElements[3]);
-        addToDOM(projectPageElements[4]);
+        addContentToDOM(project, createElements());
     });
-    
 }
 
 function createElements() {
@@ -87,26 +84,25 @@ function createElements() {
     cardDesc.appendChild(projectDesc);
     projectLinksP.appendChild(projectLinks);
 
-    return [projectName, projectDesc, projectImage, projectLinks, cardContainer];
+    //Return obj with all elements
+    return { name: projectName, desc: projectDesc, img: projectImage, links: projectLinks, container: cardContainer };
 }
 
 
-function addContent(project, projectName, projectDesc, projectImage, projectLinks) {
-    let projectNameText = document.createTextNode(project.name);
-    let projectDescText = document.createTextNode(project.description);
+function addContentToDOM(projectData, pageElem) {
+    let projectNameText = document.createTextNode(projectData.name);
+    let projectDescText = document.createTextNode(projectData.description);
 
-    projectLinks.href = project.linkSrc;
-    console.log(project.linkSrc);
-    projectLinks.innerText = project.linkText;
+    pageElem.name.appendChild(projectNameText);
+    pageElem.desc.appendChild(projectDescText);
 
-    projectName.appendChild(projectNameText);
-    projectDesc.appendChild(projectDescText);
-    projectImage.src = project.imageSrc;
-    projectImage.alt = project.imageAlt;
-}
+    pageElem.img.src = projectData.imageSrc;
+    pageElem.img.alt = projectData.imageAlt;
 
+    pageElem.links.href = projectData.linkSrc;
+    pageElem.links.innerText = projectData.linkText;
 
-function addToDOM(cardContainer) {
+    //Add to DOM
     let mainDiv = document.getElementsByTagName("main");
-    mainDiv[0].appendChild(cardContainer);
+    mainDiv[0].appendChild(pageElem.container);
 }
