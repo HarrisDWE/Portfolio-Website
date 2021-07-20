@@ -4,11 +4,11 @@ window.addEventListener("DOMContentLoaded", createProjects);
 function createProjects() {
     fetch(".ProjectsTEST.json")
         .then(response => response.json())
-        .then(data => addData(data))
+        .then(data => addProjects(data))
         .catch(err => console.log("JSON load error:" + err))
     
     //Testing
-    addData([{
+    addProjects([{
         "name" : "Testing JSON", 
         "description" : "this is an example description",
         "tech" : "currently just text, but will change to images later",
@@ -38,7 +38,7 @@ function createProjects() {
 //     });
 // });
 
-function addData(data) {
+function addProjects(data) {
     data.forEach(project => {
         addContentToDOM(project, createElements());
     });
