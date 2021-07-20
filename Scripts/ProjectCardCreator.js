@@ -92,18 +92,6 @@ function createElements() {
 
 
 function addContent(project, projectName, projectDesc, projectImage, projectLinks) {
-    //Hardcoded test
-    // let projectNameTextTest = document.createTextNode("Example Project Title (Using JS)");
-    // let projectDescTextTest = document.createTextNode("Example description (using JS). Bacon ipsum dolor amet chicken turducken porchetta pork loin t-bone strip steak. Filet mignon brisket beef strip steak prosciutto venison. Hamburger tail filet mignon strip steak tri-tip short ribs jerky doner bacon burgdoggen swine capicola porchetta ham hock. Shankle pork loin ham turducken frankfurter pig pancetta short ribs tail ground round. Shankle beef ribs flank kielbasa shank picanha. Tenderloin corned beef pork loin, hamburger kielbasa kevin fatback pork chop. T-bone boudin pork chislic ground round beef ribs.");
-
-    // projectLinks.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-    // projectLinks.innerText = "link";
-
-    // projectName.appendChild(projectNameTextTest);
-    // projectDesc.appendChild(projectDescTextTest);
-    // projectImage.src = "../Images/Test-Image.png";
-    // projectImage.alt = "test image";
-
     let projectNameText = document.createTextNode(project.name);
     let projectDescText = document.createTextNode(project.description);
 
