@@ -18,14 +18,16 @@
         <header>
             <h1 class="header-home">
                 <a href="index.html">Dan Harris</a>
+                | CV
             </h1>
 
             <div class="header-social-links">
+                <!-- TODO: Links to linked in and github profile - with images-->
                 <a href="https://www.linkedin.com/in/harris-dan7/">
-                    <img class="social-image" src="../Images/linkedIn-Black-Without-R.png" alt="link to linkedin profile">
+                    <img class="social-image" src="./Images/linkedIn-Black-Without-R.png" alt="link to linkedin profile">
                 </a>
                 <a href="https://github.com/HarrisDWE" alt="link to github profile">
-                    <img class="social-image" src="../Images/GitHub-Mark-128.png" alt="link to github profile">
+                    <img class="social-image" src="./Images/GitHub-Mark-128.png" alt="link to github profile">
                 </a>
             </div>
         </header>
@@ -40,22 +42,18 @@
         </nav>
         
         <main>
-            <div class="intro-container">
-                <h2 class="intro-greeting">Hello there!</h2>
-                
-                <div class="intro-description">
-                    <p>I'm <span class="intro-name">Dan Harris</span>, a masters's student currently studying Computer Science at Lancaster University.</p>
-                        <!-- Mission statement - make this reflect CV (but be unique) -->
-                    <p>I am a programmer who is passionate about designing and developing games in both Unity and Unreal Engine.</p> 
-                    <p>On this site you will find an assortment of personal projects I have completed as a well as my CV.</p>
-                </div>
-    
-                <div class="intro-contact">
-                    <p>
-                        If you wish to contact me you can do so here: <a class="p-links" href="mailto:danweharris@gmail.com" target="_top">danweharris@gmail.com</a>.<br>
-                        Or use the form found on the <a class="p-links" href="Contact.html">contact page</a>.
-                    </p>
+            <div class="cv-container">
+                <p class="cv-downloads">
+                    Download CV as:
+                    <a class="p-links" href="./Documents/Test.pdf" download>pdf</a>
+                    |
+                    <a class="p-links" href="./Documents/Test.docx">docx</a>
+                </p>
+                <!-- Auto imports a PDF Viewer -->
+                <!-- <object data="./Documents/Test.pdf#toolbar=1&view=FitH&scrollbar=1" type='application/pdf' class="cv-viewer"></object> -->
+                <iframe src="./Documents/Test.pdf#toolbar=1&view=FitH&scrollbar=1" type='application/pdf' class="cv-viewer" frameborder="0"></iframe> <!-- Works with dev tools open-->
             </div>
+
         </main>
 
         <footer>

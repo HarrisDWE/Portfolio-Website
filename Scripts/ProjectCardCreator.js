@@ -2,41 +2,38 @@ window.addEventListener("DOMContentLoaded", createProjects);
 
 
 function createProjects() {
-    fetch(".ProjectsTEST.json")
-        .then(response => response.json())
+    //http://localhost:8000/Resources/Projects.json
+    fetch("./Resources/Projects.json")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return response.json();
+    })
         .then(data => addProjects(data))
         .catch(err => console.log("JSON load error:" + err))
     
-    //Testing
-    addProjects([{
-        "name" : "Testing JSON", 
-        "description" : "this is an example description",
-        "tech" : "currently just text, but will change to images later",
-        "imageSrc" : "../Images/Test-Image.png",
-        "imageAlt" : "This is alt text",
-        "linkText" : "Example Link",
-        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    },
-    {
-        "name" : "Testing JSON 2", 
-        "description" : " 2this is an example description",
-        "tech" : "currently just text, but will change to images later",
-        "imageSrc" : "../Images/Test-Image.png",
-        "imageAlt" : "This is alt text",
-        "linkText" : "Example Link",
-        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    }])
+    //Hard code Testing
+    // addProjects([{
+    //     "name" : "Testing JSON", 
+    //     "description" : "this is an example description",
+    //     "tech" : "currently just text, but will change to images later",
+    //     "imageSrc" : "../Images/Test-Image.png",
+    //     "imageAlt" : "This is alt text",
+    //     "linkText" : "Example Link",
+    //     "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    // },
+    // {
+    //     "name" : "Testing JSON 2", 
+    //     "description" : " 2this is an example description",
+    //     "tech" : "currently just text, but will change to images later",
+    //     "imageSrc" : "../Images/Test-Image.png",
+    //     "imageAlt" : "This is alt text",
+    //     "linkText" : "Example Link",
+    //     "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    // }])
 }
 
-// $.getJSON(".Projects.json", function(data) {
-//     //const projects = data.projects;
-//     const projects = JSON.parse(data);
-//     projects.forEach(project => {
-//         projectPageElements = createElements();
-//         addContent(project, projectPageElements[0], projectPageElements[1], projectPageElements[2], projectPageElements[3]);
-//         addToDOM(projectPageElements[4]);
-//     });
-// });
 
 function addProjects(data) {
     data.forEach(project => {
