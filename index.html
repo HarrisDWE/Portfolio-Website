@@ -7,6 +7,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="HomeAltStyle.css">
 
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,28 +17,50 @@
     
     <body>
         <header>
-            <h1 class="header-home">
-                <a href="index.html">Dan Harris</a>
-            </h1>
+            <div class="header-main">
+                <h1 class="header-home">
+                    <a href="index.html">Dan Harris</a>
+                </h1>
+    
+                <nav role="navigation">
+                    <ul>
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="Projects.html">Projects</a></li>
+                        <li><a class="nav-link" href="CV.html">Resume</a></li>
+                        <li><a class="nav-link" href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+    
+                <div class="header-social-links">
+                    <a href="https://www.linkedin.com/in/harris-dan7/">
+                        <img class="social-image" src="./Images/linkedIn-Black-Without-R.png" alt="link to linkedin profile">
+                    </a>
+                    <a href="https://github.com/HarrisDWE" alt="link to github profile">
+                        <img class="social-image" src="/Images/GitHub-Mark-128.png" alt="link to github profile">
+                    </a>
+                </div>
+              
+                <a id="burger" href="javascript:void(0);" onclick="hamburgerControl()">
+                    <div id="burger-container">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                </a> 
+            </div>
+            
 
-            <div class="header-social-links">
-                <a href="https://www.linkedin.com/in/harris-dan7/">
-                    <img class="social-image" src="./Images/linkedIn-Black-Without-R.png" alt="link to linkedin profile">
-                </a>
-                <a href="https://github.com/HarrisDWE" alt="link to github profile">
-                    <img class="social-image" src="./Images/GitHub-Mark-128.png" alt="link to github profile">
-                </a>
+            <div id="burger-dropdown-container">
+                <div id="burger-dropdown">
+                    <a class="burger-links" href="index.html">Home</a>
+                    <a class="burger-links" href="Projects.html">Projects</a>
+                    <a class="burger-links" href="CV.html">Resume</a></li>
+                    <a class="burger-links" href="Contact.html">Contact</a>
+                </div>
             </div>
         </header>
 
-        <nav role="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="CV.html">CV</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        
         
         <main>
             <div class="intro-container">
@@ -47,15 +70,32 @@
                     <p>I'm <span class="intro-name">Dan Harris</span>, a masters's student currently studying Computer Science at Lancaster University.</p>
                         <!-- Mission statement - make this reflect CV (but be unique) -->
                     <p>I am a programmer who is passionate about designing and developing games in both Unity and Unreal Engine.</p> 
-                    <p>On this site you will find an assortment of personal projects I have completed as a well as my CV.</p>
+                    <p>On this site you will find an assortment of personal projects, in addition to my resume.</p>
                 </div>
     
                 <div class="intro-contact">
                     <p>
-                        If you wish to contact me you can do so here: <a class="p-links" href="mailto:danweharris@gmail.com" target="_top">danweharris@gmail.com</a>.<br>
-                        Or use the form found on the <a class="p-links" href="Contact.html">contact page</a>.
+                        Want to contact me? Send me an email at<a class="p-links" href="mailto:danweharris@gmail.com" target="_top">danweharris@gmail.com</a>.<br>
                     </p>
             </div>
+
+            <section id="project-partition" class="partition-inverted">
+                <h2>Projects</h2>
+                <p>View my previous projects, including an assorment of games developed with Unity and Unreal Engine 4, as well as some non-game related projects (such as this website!)</p>
+                <a href="Projects.html"><button class="homepage-button">More project information</button></a>
+            </section>
+
+            <section id="CV-content" class="partition">
+                <h2>Resume</h2>
+                <p>Take a look at my resume! If you want to know more about me and my qualifications, then this is the place to look!</p>
+                <a href="CV.html"><button class="homepage-button">View Resume</button></a>
+            </section>
+
+            <section id="contact-content" class="partition-inverted">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions, or just want to get in touch, the best way do to so is to send me an email at <a class="p-links" href="mailto:danweharris@gmail.com" target="_top">danweharris@gmail.com</a> and I will reply to you as soon as I can.</p>
+                <a href="Contact.html"><button class="homepage-button">Contact Me</button></a>
+            </section>
         </main>
 
         <footer>
@@ -71,5 +111,8 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Scripts -->
+        <script src="/Scripts/Hamburger.js"></script>
     </body>
 </html>
