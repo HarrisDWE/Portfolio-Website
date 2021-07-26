@@ -36,12 +36,14 @@ function createProjects() {
 
 
 function addProjects(data) {
+    let projectIndex = 1;
     data.forEach(project => {
-        addContentToDOM(project, createElements());
+        addContentToDOM(project, createElements(projectIndex));
+        projectIndex++;
     });
 }
 
-function createElements() {
+function createElements(projectIndex) {
     //Define key variables
     let cardContainer = document.createElement("div");
     let projectTech = document.createElement("div");
@@ -57,7 +59,10 @@ function createElements() {
     let projectDesc = document.createElement("p");
 
     //Assign classes
-    cardContainer.classList.add("project-card-container");
+    cardContainer.classList.add("project-card-container"); 
+    if (projectIndex % 2 == 0)
+        cardContainer.classList.add("project-inverted");
+
     projectTech.classList.add("project-card-tech");
     card.classList.add("project-card");
     cardMain.classList.add("project-card-main");
