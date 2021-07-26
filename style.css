@@ -9,7 +9,7 @@ body {
     font-size: 1.5rem;
     color: rgb(32, 48, 64);
     
-    margin: 0.5vh 9.5vw;
+    padding: 0.5vh 9.5vw;
 }
 body a {
     color: rgb(32, 48, 64);
@@ -60,7 +60,7 @@ nav ul a:visited {
 
 /* Main */
 main {
-    margin-top: 3rem;
+    padding: 0 9.5vw;
 }
 
 /* Footer */
@@ -175,23 +175,26 @@ button:hover {
 
 
 /* ---------------------
-    Homepage Styling
+    Home Page Styling
 --------------------- */ 
-.intro-container {
-    font-weight: 2rem;
+#homepage-hero {
+    height: 100vh;
+}
+#intro-container {
+    padding: 0 9.5vw;
 }
 
-.intro-greeting {
+#intro-greeting {
     font-size: 2.5rem;
     font-weight: 600;
     margin: 4rem 0;
 }
 
-.intro-name {
+#intro-name {
     font-weight: 600;
 }
 
-.intro-contact {
+#intro-contact {
     margin-top: 4rem;
 }
 
