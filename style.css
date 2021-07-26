@@ -1,17 +1,21 @@
+/* ----------------------------
+    General - Default Elements
+---------------------------- */ 
+
+/* Body */
 body {
     font-family: "Raleway", "sans-serif";
     font-weight: 400;
     font-size: 1.5rem;
     color: rgb(32, 48, 64);
     
-    /* background: whitesmoke; */
     margin: 0.5vh 9.5vw;
 }
-
 body a {
     color: rgb(32, 48, 64);
 }
 
+/* Header */
 header {
     display: block;
     padding: 2rem 0 1rem 0;
@@ -24,12 +28,7 @@ header a {
     text-decoration: none;
 }
 
-.header-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
+/* Nav menu */
 nav {
     margin: 2rem 0;
     font-size: 2rem;
@@ -46,6 +45,9 @@ nav ul {
     margin-block-end: 0;
     padding-inline-start: 0;
 }
+nav ul li {
+    margin: 0 1rem;
+}
 nav ul a {
     text-decoration: none;
 }
@@ -55,24 +57,13 @@ nav ul a:hover {
 nav ul a:visited {
     color: rgb(32, 48, 64);
 }
-nav ul li {
-    margin: 0 1rem;
-}
 
+/* Main */
 main {
     margin-top: 3rem;
 }
 
-h1 {
-    font-size: 2rem;
-    margin-top: 0;
-}
-
-h3 {
-    margin-top: 0;
-    font-size: 2.25rem;
-}
-
+/* Footer */
 footer {
     display: block;
     font-size: 1rem;
@@ -82,6 +73,18 @@ footer a {
     color: rgb(240, 84, 84);
 }
 
+/* Headings */
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 2.25rem;
+}
+
+/* Button */
 button {
     padding: 0.75rem 1.5rem;
     margin: 1rem 0;
@@ -97,6 +100,15 @@ button {
 button:hover {
     background-color: rgb(216, 65, 65);
     border-color: rgb(216, 65, 65);
+}
+
+/* ----------------------------
+    General - Custom Elements
+---------------------------- */ 
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-social-links img {
@@ -118,9 +130,7 @@ button:hover {
     margin: 1rem 0;
 }
 
-/* ---------------------
-    Burger Menu
---------------------- */ 
+/* Burger Menu */
 #burger {
     display: none;
 }
@@ -132,24 +142,25 @@ button:hover {
     border-radius: 4px;
 }
 
-.burger-line {
-    width: 30px;
-    height: 4px;
-    background-color: rgb(32, 48, 64);
-    margin: 6px 0;
-}
-
 #burger-dropdown-container {
     display: none;
     min-width: 100%;
     padding: 1rem .5rem 1rem .5rem;
 }
+
 #burger-dropdown {
     display: flex;
     flex-direction: column;
     justify-content: center;
     background: rgba(7, 8, 8, 0.05);
     border-radius: 4px;
+}
+
+.burger-line {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(32, 48, 64);
+    margin: 6px 0;
 }
 
 .burger-links {
@@ -162,18 +173,10 @@ button:hover {
     margin: 0 0.5rem 0 0.5rem;
 }
 
-.burger-collapsed {
-    display: none;
-}
-
-.burger-expanded {
-    display: block
-}
 
 /* ---------------------
-    Home page styling
+    Homepage Styling
 --------------------- */ 
-
 .intro-container {
     font-weight: 2rem;
 }
@@ -202,8 +205,9 @@ button:hover {
     padding: 5vh 5.5vw 5vh 5.5vw;
 }
 
+
 /* ---------------------
-    Projects page styling
+    Projects Page Styling
 --------------------- */ 
 .project-card-container {
     /* color: white; */
@@ -223,8 +227,7 @@ button:hover {
     color: white;
 }
 
-
-/* Testing */
+/* Project card testing*/
 .test-project-card-container {
     background: rgb(240, 84, 84);
     padding: 1rem 2rem;
@@ -248,20 +251,21 @@ button:hover {
     margin-left: 2rem;
 }
 
+
 /* ---------------------
-    CV page styling
+    Resume Page Styling
 --------------------- */ 
 .cv-container a {
     color: rgb(240, 84, 84);
 }
-/* TODO: Refine this - don't have set px values for height - got to bottom of screen */
+
 .cv-viewer {
     width: 100%;
     height: 75vh;
 }
 
 /* ---------------------
-    Contact page styling
+    Contact Page Styling
 --------------------- */
 .contact-form-container {
     display: flex;
@@ -314,25 +318,10 @@ button:hover {
     border-width: 1px;
 }
 
-/* #contact-form-submit-btn {
-    padding: 0.75rem 1.5rem;
-    margin: 1rem 0;
-    background-color: rgb(240, 84, 84);
-    border-color: rgb(240, 84, 84);
-    border-width: 2px;
-    border-radius: 3px;
-    border-style: solid;
-    
-    font-size: 1.25rem;
-    color: white;
-}
 
-#contact-form-submit-btn:hover {
-    background-color: rgb(216, 65, 65);
-    border-color: rgb(216, 65, 65);
-} */
-
-
+/* ---------------------
+    Media Queries
+--------------------- */
 /* Fix issue where if the dropdown is active it will keep open regardless of the size of the pagae */
 @media screen and (min-width: 1025px) {
     #burger-dropdown-container{
