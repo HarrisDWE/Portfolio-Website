@@ -16,29 +16,48 @@
     
     <body>
         <header>
-            <h1 class="header-home">
-                <a href="index.html">Dan Harris</a>
-                | Contact
-            </h1>
+            <div class="header-main">
+                <h1 class="header-home">
+                    <a href="index.html">Dan Harris</a>
+                </h1>
+    
+                <nav role="navigation">
+                    <ul>
+                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="Projects.html">Projects</a></li>
+                        <li><a class="nav-link" href="CV.html">Resume</a></li>
+                        <li><a class="nav-link" href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+    
+                <div class="header-social-links">
+                    <a href="https://www.linkedin.com/in/harris-dan7/">
+                        <img class="social-image" src="./Images/linkedIn-Black-Without-R.png" alt="link to linkedin profile">
+                    </a>
+                    <a href="https://github.com/HarrisDWE" alt="link to github profile">
+                        <img class="social-image" src="/Images/GitHub-Mark-128.png" alt="link to github profile">
+                    </a>
+                </div>
+              
+                <a id="burger" href="javascript:void(0);" onclick="hamburgerControl()">
+                    <div id="burger-container">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                </a> 
+            </div>
+            
 
-            <div class="header-social-links">
-                <a href="https://www.linkedin.com/in/harris-dan7/">
-                    <img class="social-image" src="./Images/linkedIn-Black-Without-R.png" alt="link to linkedin profile">
-                </a>
-                <a href="https://github.com/HarrisDWE" alt="link to github profile">
-                    <img class="social-image" src="./Images/GitHub-Mark-128.png" alt="link to github profile">
-                </a>
+            <div id="burger-dropdown-container">
+                <div id="burger-dropdown">
+                    <a class="burger-links" href="index.html">Home</a>
+                    <a class="burger-links" href="Projects.html">Projects</a>
+                    <a class="burger-links" href="CV.html">Resume</a></li>
+                    <a class="burger-links" href="Contact.html">Contact</a>
+                </div>
             </div>
         </header>
-
-        <nav role="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="CV.html">CV</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
         
         <main>
             <div class="contact-form-container">
