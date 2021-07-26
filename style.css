@@ -6,7 +6,7 @@
 body {
     font-family: "Raleway", "sans-serif";
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: rgb(32, 48, 64);
     
     padding: 0.5vh 9.5vw;
@@ -18,7 +18,7 @@ body a {
 /* Header */
 header {
     display: block;
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
 
     position: sticky;
     top: 0;
@@ -79,9 +79,14 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
 h3 {
-    margin-top: 0;
-    font-size: 2.25rem;
+    font-size: 1.25rem;
+    margin: 0;
 }
 
 /* Button */
@@ -180,18 +185,24 @@ button:hover {
 #homepage-hero {
     height: 100vh;
 }
+
 #intro-container {
     padding: 0 9.5vw;
 }
 
 #intro-greeting {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin: 4rem 0;
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 0.25rem;
 }
 
-#intro-name {
+#intro-name-big {
     font-weight: 600;
+}
+
+#intro-desc-big {
+    font-weight: 600;
+    color: rgb(180, 200, 205);
 }
 
 #intro-contact {
@@ -200,12 +211,12 @@ button:hover {
 
 .partition {
     padding: 5vh 5.5vw 5vh 5.5vw;
-    background: #1B1B1B;
-    color: ghostwhite;
 }
 
 .partition-inverted {
     padding: 5vh 5.5vw 5vh 5.5vw;
+    background: rgb(180, 200, 205);
+    color: white;
 }
 
 
