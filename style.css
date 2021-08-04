@@ -3,6 +3,22 @@
 ---------------------------- */ 
 :root {
     --navbar-height: 13vh;
+
+    /* --light-colour-1: #D8DBE2;
+    --light-colour-2: #A9BCD0;
+    --highlight-colour-1: #68c0ce;
+    --highlight-colour-2: #4E919B;
+    --dark-colour-1: #373F51;
+    --dark-colour-2: #1B1B1E; */
+
+    
+    --light-colour-1: white;
+    --light-colour-2: rgb(209, 225, 230);;
+    --highlight-colour-1: rgb(240, 84, 84);
+    --highlight-colour-2: rgb(216, 65, 65);
+    --dark-colour-1: rgb(32, 48, 64);
+    --dark-colour-2: rgb(32, 48, 64); 
+   
 }
 
 /* Body */
@@ -10,13 +26,13 @@ body {
     font-family: "Raleway", "sans-serif";
     font-weight: 400;
     font-size: 1.25rem;
-    color: rgb(32, 48, 64);
+    color: var(--dark-colour-2);
     
     padding: 0.5vh 9.5vw;
 }
 body a {
-    color: rgb(32, 48, 64);
-}
+    color: var(--dark-colour-2);
+} /* Need this? */
 
 /* Header */
 header {
@@ -25,6 +41,7 @@ header {
 
     position: sticky;
     top: 0;
+
     background: white;
 }
 header a {
@@ -58,7 +75,7 @@ nav ul a:hover {
     text-decoration: underline;
 }
 nav ul a:visited {
-    color: rgb(32, 48, 64);
+    color: var(--dark-colour-2);
 }
 
 /* Main */
@@ -73,7 +90,7 @@ footer {
     margin-top: 3rem;
 }
 footer a {
-    color: rgb(240, 84, 84);
+    color: var(--highlight-colour-1);
 }
 
 /* Headings */
@@ -97,8 +114,8 @@ h3 {
 button {
     padding: 0.75rem 1.5rem;
     margin: 1rem 0;
-    background-color: rgb(240, 84, 84);
-    border-color: rgb(240, 84, 84);
+    background-color: var(--highlight-colour-1);
+    border-color: var(--highlight-colour-1);
     border-width: 2px;
     border-radius: 3px;
     border-style: solid;
@@ -107,8 +124,8 @@ button {
     color: white;
 }
 button:hover {
-    background-color: rgb(216, 65, 65);
-    border-color: rgb(216, 65, 65);
+    background-color: var(--highlight-colour-2);
+    border-color: var(--highlight-colour-2);
 }
 
 /* ----------------------------
@@ -126,7 +143,7 @@ button:hover {
 }
 
 .p-links {
-    color: rgb(240, 84, 84);
+    color: var(--highlight-colour-1);
     font-weight: 600;
 }
 
@@ -168,17 +185,17 @@ button:hover {
 .burger-line {
     width: 30px;
     height: 4px;
-    background-color: rgb(32, 48, 64);
+    background-color: var(--dark-colour-2);
     margin: 6px 0;
 }
 
 .burger-links {
-    color: rgb(32, 48, 64);
+    color: var(--dark-colour-2);
     /* text-align: center; */
     text-decoration: none;
     font-size: 1.4rem;
     padding: 0.75rem 0.5rem;
-    border-bottom: 1px solid rgb(32, 48, 64);
+    border-bottom: 1px solid var(--dark-colour-2);
     margin: 0 0.5rem 0 0.5rem;
 }
 
@@ -191,7 +208,7 @@ button:hover {
 }
 
 #intro-container {
-    padding: 0 9.5vw;
+    padding: 10% 9.5vw;
 }
 
 #intro-greeting {
@@ -204,7 +221,7 @@ button:hover {
 
 #intro-desc-big {
     font-weight: 600;
-    color: rgb(180, 200, 205);
+    color: var(--light-colour-2);
 }
 
 #intro-contact {
@@ -217,7 +234,7 @@ button:hover {
 
 .partition-inverted {
     padding: 5vh 5.5vw 5vh 5.5vw;
-    background: rgb(180, 200, 205);
+    background: var(--light-colour-2);
     color: white;
 }
 
@@ -227,7 +244,7 @@ button:hover {
 --------------------- */ 
 .project-card-container {
     /* color: white; */
-    background: rgb(209, 225, 230);
+    background: var(--light-colour-2);
     padding: 1rem 2rem;
     border-radius: 4px;
     font-size: 1.25rem;
@@ -239,13 +256,13 @@ button:hover {
 }
 
 .project-inverted {
-    background: rgb(240, 84, 84);
+    background: var(--highlight-colour-1);
     color: white;
 }
 
 /* Project card testing*/
 .test-project-card-container {
-    background: rgb(240, 84, 84);
+    background: var(--highlight-colour-1);
     padding: 1rem 2rem;
     border-radius: 4px;
     font-size: 1.25rem;
@@ -253,7 +270,7 @@ button:hover {
     margin-bottom: 3rem;
 }
 .test-project-card-container .p-links {
-    color: rgb(32, 48, 64);
+    color: var(--dark-colour-2);
 }
 .test-project-card {
     display: flex;
@@ -272,7 +289,7 @@ button:hover {
     Resume Page Styling
 --------------------- */ 
 .cv-container a {
-    color: rgb(240, 84, 84);
+    color: var(--highlight-colour-1);
 }
 
 .cv-viewer {
@@ -311,7 +328,7 @@ button:hover {
     box-sizing: border-box;
     
     background-color: #f8f8f8;
-    border-color: rgb(32, 48, 64);
+    border-color: var(--dark-colour-2);
     border-radius: 3px;
     border-width: 1px;
 }
