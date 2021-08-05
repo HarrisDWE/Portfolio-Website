@@ -13,7 +13,7 @@
 
     
     --light-colour-1: white;
-    --light-colour-2: rgb(209, 225, 230);;
+    --light-colour-2: rgb(224, 224, 224);;
     --highlight-colour-1: rgb(240, 84, 84);
     --highlight-colour-2: rgb(216, 65, 65);
     --dark-colour-1: rgb(32, 48, 64);
@@ -228,11 +228,11 @@ button:hover {
     margin-top: 4rem;
 }
 
-.partition {
+.section {
     padding: 5vh 5.5vw 5vh 5.5vw;
 }
 
-.partition-inverted {
+.section-inverted {
     padding: 5vh 5.5vw 5vh 5.5vw;
     background: var(--light-colour-2);
     color: white;
