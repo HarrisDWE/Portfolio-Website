@@ -153,8 +153,10 @@ button:hover {
 }
 
 .footer-contents {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    text-align: center;
+    padding: 0 var(--main-width-padding)
 }
 
 .footer-links {
