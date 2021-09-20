@@ -21,6 +21,11 @@
    
 }
 
+html {
+    scroll-behavior: smooth;     /* Enables a smooth scroll when pressing links in the nav bar */
+    scroll-padding-top: var(--navbar-height);
+}
+
 /* Body */
 body {
     font-family: "Raleway", "sans-serif";
