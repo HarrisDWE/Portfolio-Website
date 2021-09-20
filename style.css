@@ -43,7 +43,7 @@ body a {
 /* Header */
 header {
     display: block;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem 0;
 
     position: sticky;
     top: 0;
@@ -177,7 +177,7 @@ button:hover {
 #burger-dropdown-container {
     display: none;
     min-width: 100%;
-    padding: 1rem .5rem 1rem .5rem;
+    padding: 1rem 0;
 }
 
 #burger-dropdown {
@@ -303,77 +303,38 @@ button:hover {
     height: 75vh;
 }
 
-/* ---------------------
-    Contact Page Styling
---------------------- */
-.contact-form-container {
-    display: flex;
-    justify-content: center;
-}
-.contact-form-container form {
-    width: 100%;
-}
-.contact-form-container form label {
-    margin-bottom: .5rem;
-}
-
-.contact-form-text-input-containter {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-}
-
-.contact-form-input {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
-.contact-form-input input[type=text] {
-    padding: 12px 20px;
-    box-sizing: border-box;
-    
-    background-color: #f8f8f8;
-    border-color: var(--dark-colour-2);
-    border-radius: 3px;
-    border-width: 1px;
-}
-
-#contact-form-textarea {
-    margin-top: 1rem;
-}
-#contact-form-textarea textarea {
-    width: 100%;
-    height: 25vh;
-    padding: 12px 20px;
-    display: block;
-    box-sizing: border-box;
-    resize: none;
-    margin-top: 0.5rem;
-
-    background-color: #f8f8f8;
-    border-color:rgb(32, 48, 64);
-    border-radius: 3px;
-    border-width: 1px;
-}
-
 
 /* ---------------------
     Media Queries
 --------------------- */
-/* Fix issue where if the dropdown is active it will keep open regardless of the size of the pagae */
-@media screen and (min-width: 1025px) {
+/* Fix issue where if the dropdown is active it will keep open regardless of the size of the page */
+@media screen and (min-width: 1025px) {    
+    #burger {
+        display: none;
+    }
     #burger-dropdown-container{
         display: none; 
     }    
 }
 
 @media only screen and (max-width: 1024px) {
-    #burger {
-        display: flex;
+    body {
+        padding: 0 1vw;
+    }
+    main {
+        padding: 0;
     }
 
     nav {
         display: none;
+    }
+
+    .header-social-links
+    {
+        display: none;
+    }
+
+    #burger {
+        display: flex;
     }
 }
