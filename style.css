@@ -3,6 +3,8 @@
 ---------------------------- */ 
 :root {
     --navbar-height: 13vh;
+    --main-width-padding: 9.5vw;
+    --home-section-padding: 5vh 5.5vw 5vh 5.5vw;
 
     /* --light-colour-1: #D8DBE2;
     --light-colour-2: #A9BCD0;
@@ -33,7 +35,7 @@ body {
     font-size: 1.25rem;
     color: var(--dark-colour-2);
     
-    padding: 0 9.5vw;
+    padding: 0;
     margin: 0;
 }
 body a {
@@ -43,7 +45,7 @@ body a {
 /* Header */
 header {
     display: block;
-    padding: 1rem 0;
+    padding: 1rem var(--main-width-padding);
 
     position: sticky;
     top: 0;
@@ -84,10 +86,6 @@ nav ul a:visited {
     color: var(--dark-colour-2);
 }
 
-/* Main */
-main {
-    padding: 0 9.5vw;
-}
 
 /* Footer */
 footer {
@@ -211,6 +209,7 @@ button:hover {
 --------------------- */ 
 #homepage-hero {
     height: calc(100vh - var(--navbar-height));
+    padding: 0 var(--main-width-padding);
 }
 
 #intro-container {
@@ -235,13 +234,18 @@ button:hover {
 }
 
 .section {
-    padding: 5vh 5.5vw 5vh 5.5vw;
+    padding: var(--home-section-padding);
 }
 
 .section-inverted {
-    padding: 5vh 5.5vw 5vh 5.5vw;
+    padding: var(--home-section-padding);
     background: var(--light-colour-2);
     color: white;
+}
+
+.section-content-container
+{
+    padding: 0 calc(var(--main-width-padding) * 2);
 }
 
 
@@ -318,23 +322,35 @@ button:hover {
 }
 
 @media only screen and (max-width: 1024px) {
-    body {
-        padding: 0 1vw;
+    h2 {
+        font-size: 3rem;
     }
-    main {
-        padding: 0;
-    }
-
+    
     nav {
         display: none;
     }
 
+    header {
+        padding: 1rem 5.5vw;
+    }
     .header-social-links
     {
         display: none;
     }
 
+    .section-content-container {
+        padding: 0 1vw;
+    }
+
     #burger {
         display: flex;
+    }
+
+    #homepage-hero {
+        padding: 0;
+    }
+
+    #intro-container {
+        padding: var(--home-section-padding);
     }
 }
