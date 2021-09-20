@@ -301,6 +301,9 @@ button:hover {
 /* ---------------------
     Resume Page Styling
 --------------------- */ 
+.cv-container {
+    padding: 0 var(--main-width-padding);
+}
 .cv-container a {
     color: var(--highlight-colour-1);
 }
