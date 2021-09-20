@@ -105,6 +105,8 @@ function addContentToDOM(projectData, pageElem) {
     pageElem.links.innerText = projectData.linkText;
 
     //Add to DOM
-    let mainDiv = document.getElementsByTagName("main");
-    mainDiv[0].appendChild(pageElem.container);
+    let cardsContainer = document.getElementById("project-cards")
+    cardsContainer.appendChild(pageElem.container)
+    // let mainDiv = document.getElementsByTagName("main");
+    // mainDiv[0].appendChild(pageElem.container);
 }

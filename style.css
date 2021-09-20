@@ -257,7 +257,7 @@ button:hover {
 --------------------- */ 
 .project-card-container {
     /* color: white; */
-    background: var(--light-colour-2);
+    background: var(--light-colour-1);
     padding: 1rem 2rem;
     border-radius: 4px;
     font-size: 1.25rem;
@@ -269,13 +269,13 @@ button:hover {
 }
 
 .project-inverted {
-    background: var(--highlight-colour-1);
-    color: white;
+    /* background: var(--highlight-colour-1);
+    color: white; */
 }
 
 /* Project card testing*/
 .test-project-card-container {
-    background: var(--highlight-colour-1);
+    background: var(--light-colour-1);
     padding: 1rem 2rem;
     border-radius: 4px;
     font-size: 1.25rem;
