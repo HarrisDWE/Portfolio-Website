@@ -87,16 +87,18 @@ function createElements(projectIndex) {
     projectLinksP.appendChild(projectLinks);
 
     //Return obj with all elements
-    return { name: projectName, desc: projectDesc, img: projectImage, links: projectLinks, container: cardContainer };
+    return { name: projectName, desc: projectDesc, tech: projectTechText, img: projectImage, links: projectLinks, container: cardContainer };
 }
 
 
 function addContentToDOM(projectData, pageElem) {
     let projectNameText = document.createTextNode(projectData.name);
     let projectDescText = document.createTextNode(projectData.description);
+    let projectTechText = document.createTextNode(projectData.tech); //For testing?
 
     pageElem.name.appendChild(projectNameText);
     pageElem.desc.appendChild(projectDescText);
+    pageElem.tech.appendChild(projectTechText); //Testing? - depends if going for text or images
 
     pageElem.img.src = projectData.imageSrc;
     pageElem.img.alt = projectData.imageAlt;
