@@ -169,7 +169,7 @@ button:hover {
 }
 
 #burger-container {
-    background-color: rgb(7, 8, 8, .1);
+    background-color: var(--light-colour-1); /* rgb(7, 8, 8, .1); */
     /* padding: .25rem 1.25rem .25rem 1.25rem; */     /* Steam deck esc. */
     padding: .5rem .75rem .5rem .75rem; 
     border-radius: 4px;
@@ -185,7 +185,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: rgba(7, 8, 8, 0.05);
+    background: var(--light-colour-1); /* rgba(7, 8, 8, 0.05); */
     border-radius: 4px;
 }
 
@@ -254,7 +254,17 @@ button:hover {
 
 /* ---------------------
     Projects Page Styling
---------------------- */ 
+--------------------- */
+#project-showcase {
+    margin-top: 5vh;
+    text-align: center;
+}
+#project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .project-card-container {
     /* color: white; */
     background: var(--light-colour-1);
@@ -262,21 +272,20 @@ button:hover {
     border-radius: 4px;
     font-size: 1.25rem;
     margin-bottom: 3rem;
+    
+    max-width: 42%;
+    /* width: 43%; */
 }
 
 .project-card-image {
-    max-width: 100%;
-}
-
-.project-inverted {
-    /* background: var(--highlight-colour-1);
-    color: white; */
+    max-width: 50%;
 }
 
 /* Project card testing*/
 .test-project-card-container {
     background: var(--light-colour-1);
-    padding: 1rem 2rem;
+    padding: 1.5vh 2vw; 
+    /* was 1rem 2rem */
     border-radius: 4px;
     font-size: 1.25rem;
     color: white;
@@ -342,6 +351,13 @@ button:hover {
     .header-social-links
     {
         display: none;
+    }
+
+    #project-cards {
+        justify-content: center;    
+    }
+    .project-card-container {
+        max-width: 100%;
     }
 
     .section-content-container {
