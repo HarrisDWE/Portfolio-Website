@@ -1,12 +1,13 @@
 [
     {
         "name" : "Yggdrasil", 
-        "description" : "A third-person brawler game set in a Norse inspired futuristic world. I worked as part of a team in Unreal Engine 4, primarily developing the AI and animation systems, as well as the UI.",
+        "description" : "A third-person brawler game set in a Norse inspired futuristic world. I in Unreal Engine 4 as part of a team, primarily developing the AI and animation systems, as well as the UI.",
         "tech" : "Unreal Engine 4 | C++ | Blueprints",
         "imageSrc" : "../Images/Test-Image.png",
         "imageAlt" : "Yggdrasil cover image",
         "linkText" : "itch.io",
-        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "buttonLink" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     },
     {
         "name" : "MAR-Interact", 
@@ -15,7 +16,8 @@
         "imageSrc" : "../Images/Test-Image.png",
         "imageAlt" : "MAR-Interact cover image",
         "linkText" : "GitHub",
-        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "buttonLink" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     },
     {
         "name" : "Object Manipulation in AR (Bachelor's Degree Project)", 
@@ -24,6 +26,7 @@
         "imageSrc" : "../Images/Test-Image.png",
         "imageAlt" : "Object manipulation cover image",
         "linkText" : "GitHub",
-        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "buttonLink" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     }
 ]

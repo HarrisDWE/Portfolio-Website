@@ -57,6 +57,8 @@ function createElements(projectIndex) {
     let projectLinksP = document.createElement("p");
     let projectLinks = document.createElement("a"); //Will need to change to support multiple links
     let projectDesc = document.createElement("p");
+    let projectDetailsA = document.createElement("a");
+    let projectDetailsButton = document.createElement("button")
 
     //Assign classes
     cardContainer.classList.add("project-card-container"); 
@@ -72,6 +74,7 @@ function createElements(projectIndex) {
     projectImage.classList.add("project-card-image");
     projectLinksP.classList.add("project-card-links");
     projectLinks.classList.add("p-links");
+    // projectDetailsButton.classList.add("project-button")
 
     //Create card structure
     cardContainer.appendChild(projectName);
@@ -79,15 +82,17 @@ function createElements(projectIndex) {
     cardContainer.appendChild(card);
     card.appendChild(cardMain);
     card.appendChild(cardDesc);
+    card.appendChild(projectDetailsA);
 
     projectTech.appendChild(projectTechText);
     cardMain.appendChild(projectImage);
     cardMain.appendChild(projectLinksP);
     cardDesc.appendChild(projectDesc);
     projectLinksP.appendChild(projectLinks);
+    projectDetailsA.appendChild(projectDetailsButton);
 
     //Return obj with all elements
-    return { name: projectName, desc: projectDesc, tech: projectTechText, img: projectImage, links: projectLinks, container: cardContainer };
+    return { name: projectName, desc: projectDesc, tech: projectTechText, img: projectImage, links: projectLinks, buttonLink : projectDetailsA, button: projectDetailsButton, container: cardContainer };
 }
 
 
@@ -105,6 +110,9 @@ function addContentToDOM(projectData, pageElem) {
 
     pageElem.links.href = projectData.linkSrc;
     pageElem.links.innerText = projectData.linkText;
+
+    pageElem.buttonLink.href = projectData.buttonLink;
+    pageElem.button.innerText = "Details";
 
     //Add to DOM
     let cardsContainer = document.getElementById("project-cards")
