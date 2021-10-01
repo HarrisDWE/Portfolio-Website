@@ -110,7 +110,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     margin: 0;
     margin-top: 0;
 }
@@ -257,7 +257,7 @@ button:hover {
 --------------------- */
 #project-showcase {
     margin-top: 5vh;
-    text-align: center;
+    /* text-align: center; */
 }
 #project-cards {
     display: flex;

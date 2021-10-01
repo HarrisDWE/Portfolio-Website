@@ -1,20 +1,29 @@
 [
     {
-        "name" : "Testing JSON", 
-        "description" : "this is an example description",
-        "tech" : "currently just text, but will change to images later",
+        "name" : "Yggdrasil", 
+        "description" : "A third-person brawler game set in a Norse inspired futuristic world. I worked as part of a team in Unreal Engine 4, primarily developing the AI and animation systems, as well as the UI.",
+        "tech" : "Unreal Engine 4 | C++ | Blueprints",
         "imageSrc" : "../Images/Test-Image.png",
-        "imageAlt" : "This is alt text",
-        "linkText" : "Example Link",
+        "imageAlt" : "Yggdrasil cover image",
+        "linkText" : "itch.io",
         "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     },
     {
-        "name" : "Testing JSON 2", 
-        "description" : " 2this is an example description",
-        "tech" : "currently just text, but will change to images later",
+        "name" : "MAR-Interact", 
+        "description" : "This is a novel 6DOF 3D object manipulation system for use on smartphones in AR applications. Currently being worked on as part of a research paper I am writing in collaboration with Lancaster University, and the the Eindhoven University of Technology. This functions as an expansion and iteration of my bachelor's degree project.  ",
+        "tech" : "Unity | C# | ARFoundation",
         "imageSrc" : "../Images/Test-Image.png",
-        "imageAlt" : "This is alt text",
-        "linkText" : "Example Link",
+        "imageAlt" : "MAR-Interact cover image",
+        "linkText" : "GitHub",
+        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+        "name" : "Object Manipulation in AR (Bachelor's Degree Project)", 
+        "description" : " This is my first iteration of a novel 6DOF 3D object manipulation system in AR. This functioned as the practical project for my bachelor's degree, and includes the applications used for two studies. It also includes a multi-touch gesture and UI based approach to 6DOF manipulation.",
+        "tech" : "Unity | C# | ARFoundation",
+        "imageSrc" : "../Images/Test-Image.png",
+        "imageAlt" : "Object manipulation cover image",
+        "linkText" : "GitHub",
         "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     }
 ]
