@@ -7,6 +7,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="modalStyle.css">
 
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -127,6 +128,24 @@
                     <!-- <a href="Projects.html"><button class="homepage-button">View Projects</button></a> -->
                 </div>
 
+                <!-- Testing -->
+                <button id="myBtn">Open Modal</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Modal Header</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p>Some text in the Modal Body</p>
+                            <p>Some other text...</p>
+                        </div>
+                    </div>
+                </div>
+  
+
                 <div id="project-showcase">
                     <!-- This div is populated by the ProjectCardCreator script -->
                     <div id="project-cards"></div>
@@ -169,5 +188,6 @@
         <!-- Scripts -->
         <script src="/Scripts/Hamburger.js"></script>
         <script src="./Scripts/ProjectCardCreator.js"></script>
+        <script src="./Scripts/Modal.js"></script>
     </body>
 </html>
