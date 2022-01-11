@@ -12,6 +12,16 @@ function createProjects() {
     })
         .then(data => addProjects(data))
         .catch(err => console.log("JSON load error:" + err))
+
+    fetch("./Resources/Modals.json")
+    .then(response => {
+        if (!response.ok) {
+            throw new Error("HTTP error " + response.status);
+        }
+        return response.json();
+    })
+        .then(data => addModals(data))
+        .catch(err => console.log("JSON load error:" + err))
     
     //Hard code Testing
     // addProjects([{
@@ -38,12 +48,22 @@ function createProjects() {
 function addProjects(data) {
     let projectIndex = 1;
     data.forEach(project => {
-        addContentToDOM(project, createElements(projectIndex));
+        addCardContentToDOM(project, createCardElements(projectIndex));
         projectIndex++;
     });
 }
 
-function createElements(projectIndex) {
+
+function addModals(data) {
+    let modalIndex = 1;
+    data.forEach(project => {
+        addModalContentToDOM(project, createModalElements(modalIndex));
+        modalIndex++;
+    });
+}
+
+
+function createCardElements(projectIndex) {
     //Define key variables
     let cardContainer = document.createElement("div");
     let projectTech = document.createElement("div");
@@ -96,7 +116,7 @@ function createElements(projectIndex) {
 }
 
 
-function addContentToDOM(projectData, pageElem) {
+function addCardContentToDOM(projectData, pageElem) {
     let projectNameText = document.createTextNode(projectData.name);
     let projectDescText = document.createTextNode(projectData.description);
     let projectTechText = document.createTextNode(projectData.tech); //For testing?
@@ -119,4 +139,71 @@ function addContentToDOM(projectData, pageElem) {
     cardsContainer.appendChild(pageElem.container)
     // let mainDiv = document.getElementsByTagName("main");
     // mainDiv[0].appendChild(pageElem.container);
+}
+
+function createModalElements(modalData, pageElem) {
+    // <div id="myModal" class="modal">
+    //                 <!-- Modal content -->
+    //                 <div class="modal-content">
+    //                     <div class="modal-header">
+    //                         <span class="close">&times;</span>
+    //                         <h2>Modal Header</h2>
+    //                     </div>
+    //                     <div class="modal-body">
+    //                         <p>Some text in the Modal Body</p>
+    //                         <p>Some other text...</p>
+    //                     </div>
+    //                 </div>
+    //             </div>
+
+
+    //Define key variables
+    let modalContainer = document.createElement("div");
+    let modalContent = document.createElement("div");
+    let modalHeader = document.createElement("div");
+    let modalMain = document.createElement("div");
+
+    let projectName = document.createElement("h2");
+    let closeButton = document.createElement("span")
+    let modalText = document.createElement("p"); //Just for testing - will need to be able to support multiple pieces of text
+    let modalImage = document.createElement("img"); //Just for testing - will need to be able to support multiple pieces of text
+
+    modalContainer.classList.add("modal-container");
+    modalContent.classList.add("modal-content"); 
+    modalHeader.classList.add("modal-header"); 
+    modalMain.classList.add("modal-main"); 
+    closeButton.classList.add("close")
+  
+    //Create card structure
+    modalContainer.appendChild(modalContent);
+    modalContent.appendChild(modalHeader);
+    modalContent.appendChild(modalMain);
+
+    modalHeader.appendChild(projectName);
+    modalHeader.appendChild(closeButton);
+
+    modalMain.appendChild(modalText);
+    modalMain.appendChild(modalImage);
+
+    return { name: projectName, text: modalText, img: modalImage, button: closeButton, container: modalContainer };
+}
+
+
+function addModalContentToDOM(modalData, pageElem) {
+    let modalTitleText = document.createTextNode(modalData.name);
+    let modalText = document.createTextNode(modalData.text);
+    let closeButtonText = document.createTextNode("x"); "&times;"
+
+    pageElem.button.appendChild(closeButtonText);
+    pageElem.name.appendChild(modalTitleText);
+    pageElem.text.appendChild(modalText);
+    
+
+    pageElem.img.src = modalData.imageSrc;
+    pageElem.img.alt = modalData.imageAlt;
+
+    //Add to DOM
+    console.log(pageElem)
+    let modalContainer = document.getElementById("modal-boxes")
+    modalContainer.appendChild(pageElem.container)
 }

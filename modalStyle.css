@@ -1,4 +1,4 @@
-.modal {
+.modal-container {
     display: none;
     position: fixed;
     z-index: 1; /* Placed on top of rest of the page */
