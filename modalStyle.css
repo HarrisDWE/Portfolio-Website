@@ -30,7 +30,11 @@
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
     animation-duration: 0.4s
-  }
+}
+
+* img {
+  max-width: 90%;
+}
   
 
 /* ---------------------
@@ -50,15 +54,15 @@
 
   
   /* The Close Button */
-  .close {
+  .close-button {
     color: #1B1B1E;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  .close-button:hover,
+  .close-button:focus {
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -66,8 +70,8 @@
   
   .modal-header {
     padding: 2px 16px;
-    background-color:#4E919B; /* --highlight-colour-2s */
+    background-color:#E2EBF5; /* --highlight-colour-2s */
     color: #1B1B1E;
   }
   
-  .modal-body {padding: 2px 16px;}
+  .modal-main {padding: 2px 16px;}

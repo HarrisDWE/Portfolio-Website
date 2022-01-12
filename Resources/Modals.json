@@ -1,7 +1,7 @@
 [
     {
         "name" : "Yggdrasil", 
-        "text" : "A third-person brawler game set in a Norse inspired futuristic world. I in Unreal Engine 4 as part of a team, primarily developing the AI and animation systems, as well as the UI.",
+        "text" : "A third-person brawler game set in a Norse inspired futuristic world. I in Unreal Engine 4 as part of a team, primarily developing the AI and animation systems, as well as the UI. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA third-person brawler game set in a Norse inspired futuristic world. I in Unreal Engine 4 as part of a team, primarily developing the AI and animation systems, as well as the UI." ,
         "imageSrc" : "../Images/Test-Image.png",
         "imageAlt" : "Yggdrasil cover image"
     },

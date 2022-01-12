@@ -94,7 +94,7 @@ function createCardElements(projectIndex) {
     projectImage.classList.add("project-card-image");
     projectLinksP.classList.add("project-card-links");
     projectLinks.classList.add("p-links");
-    // projectDetailsButton.classList.add("project-button")
+    projectDetailsButton.classList.add("project-button")
 
     //Create card structure
     cardContainer.appendChild(projectName);
@@ -102,14 +102,14 @@ function createCardElements(projectIndex) {
     cardContainer.appendChild(card);
     card.appendChild(cardMain);
     card.appendChild(cardDesc);
-    card.appendChild(projectDetailsA);
+    card.appendChild(projectDetailsButton);
 
     projectTech.appendChild(projectTechText);
     cardMain.appendChild(projectImage);
     cardMain.appendChild(projectLinksP);
     cardDesc.appendChild(projectDesc);
     projectLinksP.appendChild(projectLinks);
-    projectDetailsA.appendChild(projectDetailsButton);
+    // projectDetailsA.appendChild(projectDetailsButton);
 
     //Return obj with all elements
     return { name: projectName, desc: projectDesc, tech: projectTechText, img: projectImage, links: projectLinks, buttonLink : projectDetailsA, button: projectDetailsButton, container: cardContainer };
@@ -117,6 +117,8 @@ function createCardElements(projectIndex) {
 
 
 function addCardContentToDOM(projectData, pageElem) {
+    pageElem.container.id = projectData.name.replaceAll(" ", "-") + "-container";
+
     let projectNameText = document.createTextNode(projectData.name);
     let projectDescText = document.createTextNode(projectData.description);
     let projectTechText = document.createTextNode(projectData.tech); //For testing?
@@ -131,7 +133,7 @@ function addCardContentToDOM(projectData, pageElem) {
     pageElem.links.href = projectData.linkSrc;
     pageElem.links.innerText = projectData.linkText;
 
-    pageElem.buttonLink.href = projectData.buttonLink;
+    // pageElem.buttonLink.href = projectData.buttonLink;
     pageElem.button.innerText = "Details";
 
     //Add to DOM
@@ -141,7 +143,7 @@ function addCardContentToDOM(projectData, pageElem) {
     // mainDiv[0].appendChild(pageElem.container);
 }
 
-function createModalElements(modalData, pageElem) {
+function createModalElements() {
     // <div id="myModal" class="modal">
     //                 <!-- Modal content -->
     //                 <div class="modal-content">
@@ -172,15 +174,15 @@ function createModalElements(modalData, pageElem) {
     modalContent.classList.add("modal-content"); 
     modalHeader.classList.add("modal-header"); 
     modalMain.classList.add("modal-main"); 
-    closeButton.classList.add("close")
+    closeButton.classList.add("close-button")
   
     //Create card structure
     modalContainer.appendChild(modalContent);
     modalContent.appendChild(modalHeader);
     modalContent.appendChild(modalMain);
 
-    modalHeader.appendChild(projectName);
     modalHeader.appendChild(closeButton);
+    modalHeader.appendChild(projectName);
 
     modalMain.appendChild(modalText);
     modalMain.appendChild(modalImage);
@@ -190,9 +192,11 @@ function createModalElements(modalData, pageElem) {
 
 
 function addModalContentToDOM(modalData, pageElem) {
-    let modalTitleText = document.createTextNode(modalData.name);
-    let modalText = document.createTextNode(modalData.text);
-    let closeButtonText = document.createTextNode("x"); "&times;"
+    pageElem.container.id = modalData.name.replaceAll(" ", "-") + "-modal";
+
+    const modalTitleText = document.createTextNode(modalData.name);
+    const modalText = document.createTextNode(modalData.text);
+    const closeButtonText = document.createTextNode("x"); "&times;"
 
     pageElem.button.appendChild(closeButtonText);
     pageElem.name.appendChild(modalTitleText);
@@ -203,7 +207,71 @@ function addModalContentToDOM(modalData, pageElem) {
     pageElem.img.alt = modalData.imageAlt;
 
     //Add to DOM
-    console.log(pageElem)
     let modalContainer = document.getElementById("modal-boxes")
     modalContainer.appendChild(pageElem.container)
+
+    setupModals();
+}
+
+// This method is used to link the modals to the project buttons as well as setting the modals' event listeners
+function setupModals() {
+
+    let projectButtons = document.getElementsByClassName("project-button");
+    let modals = document.getElementsByClassName("modal-container");
+    let closeButtons = document.getElementsByClassName("close-button");
+
+    console.log("Project Buttons: " + projectButtons.length);
+    console.log("Modals: " + projectButtons.length);
+    console.log("Close Buttons: " + closeButtons.length);
+
+    if (projectButtons.length == modals.length) {
+        for (i = 0; i < projectButtons.length; i++) {
+    
+            // Set the project details button to display the correct modal
+            projectButtons.item(i).onclick = function() { projectButtonOnClick(this) };
+
+            // Set the close button to close its respective modal
+            closeButtons.item(i).onclick = function() { closeButtonOnClick(this) };
+        }
+    }
+    else {
+        console.log("The number of modals does not match the number of projects!");
+    }
+}
+
+
+function projectButtonOnClick(button) {
+    let projectButtons = document.getElementsByClassName("project-button");
+    let modals = document.getElementsByClassName("modal-container");
+    
+    //This is a horrible way of determining which modal is related to each button - come up with better way to do this.
+    for (i = 0; i < projectButtons.length; i++) {
+        if (button != projectButtons.item(i)) { continue; }
+
+        modals.item(i).style.display = "block";
+        break;
+    }
+}
+function closeButtonOnClick(button) {
+    let closeButtons = document.getElementsByClassName("close-button");
+    let modals = document.getElementsByClassName("modal-container");
+
+    //This is a horrible way of determining which modal is related to each button - come up with better way to do this.
+    for (i = 0; i < closeButtons.length; i++) {
+        if (button != closeButtons.item(i)) { continue; }
+
+        modals.item(i).style.display = "none";
+        break;
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    const modals = document.getElementsByClassName("modal-container");
+
+    for (i = 0; i < modals.length; i++) {
+        if (event.target == modals.item(i)) {
+            modals.item(i).style.display = "none";
+        }
+    }
 }
