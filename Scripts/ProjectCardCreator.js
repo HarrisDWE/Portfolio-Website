@@ -260,10 +260,10 @@ function addModalDescription(desc, container) {
 
             // Will need to do it in CSS
             video.width = "80%"; //CHANGE THIS
-            //video.height = "45%"; //CHANGE THIS
-            video.height = 400;
+            //video.height = "45%"; 
+            video.height = 400; //CHANGE THIS
 
-            video.classList.add("allowfullscreen"); //enables fullscreen for the built in video player
+            video.setAttribute("allowfullscreen", ""); //enables fullscreen for the built in video player
 
             sectionContainer.appendChild(video);
         }

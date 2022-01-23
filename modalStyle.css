@@ -4,13 +4,14 @@
     z-index: 1; /* Placed on top of rest of the page */
     
     /* Modal box location */
-    padding-top: 100px; 
+    padding-top: 7%; 
+    /* margin-bottom: 10%; */
     left: 0;
     top: 0;
     
     width: 100%;
     height: 100%; 
-    overflow: auto; /* Enable scroll if needed */
+    /* overflow: auto; */ /*  Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback colour */
     background-color: rgba(0,0,0,0.4); 
 }
@@ -22,7 +23,9 @@
     margin: auto;
     padding: 0;
     border: 1px solid #888;
-    width:90%;
+    width: 90%;
+    height: 100%; 
+    /* overflow: auto; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 3px;
 
@@ -76,10 +79,13 @@ cursor: pointer;
 
 .modal-main {
     padding: 2px 16px;
+    height: 80%; 
+    overflow: auto;
 }
 
 .modal-desc-section {
-    overflow: auto;
+    /* overflow: auto; */
+    /* height: 100%; */
 }
 
 .modal-desc-section iframe {
