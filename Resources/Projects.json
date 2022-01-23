@@ -1,5 +1,15 @@
 [
     {
+        "name" : "VR Digital Training House", 
+        "description" : "A VR application used to train officers in the Lancashire Police force, with a focus on object interaction.",
+        "tech" : "Unity | C# | XR Interaction Toolkit",
+        "imageSrc" : "../Images/Test-Image.png",
+        "imageAlt" : "VR digital training house cover image",
+        "linkText" : "GitHub",
+        "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "buttonLink" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
         "name" : "Yggdrasil", 
         "description" : "A third-person brawler game set in a Norse inspired futuristic world. I in Unreal Engine 4 as part of a team, primarily developing the AI and animation systems, as well as the UI.",
         "tech" : "Unreal Engine 4 | C++ | Blueprints",

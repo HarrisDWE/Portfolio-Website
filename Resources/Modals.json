@@ -1,5 +1,11 @@
 [
     {
+        "name" : "VR Digital Training House", 
+        "text" : "A VR application used to train officers in the Lancashire Police force, with a focus on object interaction.",
+        "imageSrc" : "../Images/Test-Image.png",
+        "imageAlt" : "VR digital training house cover image"
+    },
+    {
         "name" : "Yggdrasil", 
         "text" : "A third-person brawler game set in a Norse inspired futuristic world. I in Unreal Engine 4 as part of a team, primarily developing the AI and animation systems, as well as the UI. \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nA third-person brawler game set in a Norse inspired futuristic world. I in Unreal Engine 4 as part of a team, primarily developing the AI and animation systems, as well as the UI." ,
         "imageSrc" : "../Images/Test-Image.png",
