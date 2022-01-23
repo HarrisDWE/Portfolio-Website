@@ -41,37 +41,48 @@
     Animations - Taken from: https://www.w3schools.com/howto/howto_css_modals.asp
 --------------------- */
   /* Add Animation */
-  @-webkit-keyframes animatetop {
+@-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 
     to {top:0; opacity:1}
-  }
-  
-  @keyframes animatetop {
+}
+
+@keyframes animatetop {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
-  }
-  
+}
 
-  
-  /* The Close Button */
-  .close-button {
+
+
+/* The Close Button */
+.close-button {
     color: #1B1B1E;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close-button:hover,
-  .close-button:focus {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal-header {
+}
+
+.close-button:hover,
+.close-button:focus {
+color: white;
+text-decoration: none;
+cursor: pointer;
+}
+
+.modal-header {
     padding: 2px 16px;
     background-color:#E2EBF5; /* --highlight-colour-2s */
     color: #1B1B1E;
-  }
-  
-  .modal-main {padding: 2px 16px;}
+}
+
+.modal-main {
+    padding: 2px 16px;
+}
+
+.modal-desc-section {
+    overflow: auto;
+}
+
+.modal-desc-section iframe {
+    max-height: 100%;
+    max-width: 100%;
+}

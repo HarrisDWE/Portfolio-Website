@@ -167,14 +167,16 @@ function createModalElements() {
 
     let projectName = document.createElement("h2");
     let closeButton = document.createElement("span")
-    let modalText = document.createElement("p"); //Just for testing - will need to be able to support multiple pieces of text
-    let modalImage = document.createElement("img"); //Just for testing - will need to be able to support multiple pieces of text
+    let modalDesc =  document.createElement("div");
+    //let modalText = document.createElement("p"); //Just for testing - will need to be able to support multiple pieces of text
+    //let modalImage = document.createElement("img"); //Just for testing - will need to be able to support multiple pieces of text
 
     modalContainer.classList.add("modal-container");
     modalContent.classList.add("modal-content"); 
     modalHeader.classList.add("modal-header"); 
     modalMain.classList.add("modal-main"); 
-    closeButton.classList.add("close-button")
+    closeButton.classList.add("close-button");
+    modalDesc.classList.add("modal-desc");
   
     //Create card structure
     modalContainer.appendChild(modalContent);
@@ -184,10 +186,10 @@ function createModalElements() {
     modalHeader.appendChild(closeButton);
     modalHeader.appendChild(projectName);
 
-    modalMain.appendChild(modalText);
-    modalMain.appendChild(modalImage);
+    modalMain.appendChild(modalDesc);
+    //modalMain.appendChild(modalImage);
 
-    return { name: projectName, text: modalText, img: modalImage, button: closeButton, container: modalContainer };
+    return { name: projectName, desc: modalDesc,  button: closeButton, container: modalContainer };
 }
 
 
@@ -195,22 +197,81 @@ function addModalContentToDOM(modalData, pageElem) {
     pageElem.container.id = modalData.name.replaceAll(" ", "-") + "-modal";
 
     const modalTitleText = document.createTextNode(modalData.name);
-    const modalText = document.createTextNode(modalData.text);
+    //const modalText = document.createTextNode(modalData.text);
     const closeButtonText = document.createTextNode("x"); "&times;"
 
     pageElem.button.appendChild(closeButtonText);
     pageElem.name.appendChild(modalTitleText);
-    pageElem.text.appendChild(modalText);
+    //pageElem.text.appendChild(modalText);
     
-
-    pageElem.img.src = modalData.imageSrc;
-    pageElem.img.alt = modalData.imageAlt;
+    if (modalData.content != null) {
+        addModalDescription(modalData.content, pageElem.desc); //pass in the description container 
+    }
+    
+    // pageElem.img.src = modalData.imageSrc;
+    // pageElem.img.alt = modalData.imageAlt;
 
     //Add to DOM
     let modalContainer = document.getElementById("modal-boxes")
     modalContainer.appendChild(pageElem.container)
 
     setupModals();
+}
+
+function addModalDescription(desc, container) {
+    //Create an overall container
+    // let container = document.createElement("div");
+
+    desc.forEach(section => {
+        console.log(section);
+        //Create the container for each section
+        let sectionContainer = document.createElement("div");
+        sectionContainer.classList.add("modal-desc-section");
+
+        //Add heading
+        if (section.heading != "" && section.heading != null) {
+            let heading = document.createElement("h3");
+            heading.appendChild(document.createTextNode(section.heading));
+            
+            sectionContainer.appendChild(heading);
+        }
+        // Add text
+        if (section.text != "" && section.text != null) {
+            let text = document.createElement("p");
+            text.appendChild(document.createTextNode(section.text));
+
+            sectionContainer.appendChild(text);
+        }
+        //Add image
+        if (section.imageSrc != "" && section.imageSrc != null) {
+            let img = document.createElement("img");
+            img.src = section.imageSrc;
+            //Add alt text
+            if (section.imageAlt != "" && section.imageAlt != null) {
+                img.alt = section.imageAlt;
+            }
+
+            sectionContainer.appendChild(img);
+        }
+        //Add video
+        if (section.video != "" && section.video != null) {
+            let video = document.createElement("iframe");
+            video.src = section.video;
+
+            // Will need to do it in CSS
+            video.width = "80%"; //CHANGE THIS
+            //video.height = "45%"; //CHANGE THIS
+            video.height = 400;
+
+            video.classList.add("allowfullscreen"); //enables fullscreen for the built in video player
+
+            sectionContainer.appendChild(video);
+        }
+        //Add the section to the container
+        container.appendChild(sectionContainer);
+    });
+
+    return container;
 }
 
 // This method is used to link the modals to the project buttons as well as setting the modals' event listeners
