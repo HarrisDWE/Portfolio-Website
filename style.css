@@ -351,6 +351,24 @@ button:hover {
     }    
 }
 
+/* This is the point where the project cards don't fit on one line - instrinsic design would be a better solution to fix this */
+@media only screen and (max-width: 927px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 0.5rem;
+    }
+
+    #project-cards {
+        justify-content: center;    
+    }
+    .project-card-container {
+        max-width: 100%;
+    }
+}
+
 /* Mobile version changes */
 @media only screen and (max-width: 768px) {
     h1 {
