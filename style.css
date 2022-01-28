@@ -177,6 +177,7 @@ button:hover {
     background-color: var(--dark-colour-2);
     /* padding: .25rem 1.25rem .25rem 1.25rem; */     /* Steam deck esc. */
     padding: .5rem .75rem .5rem .75rem; 
+    /* padding: .25rem 1.25rem .25rem 1.25rem; */     /* Steam deck esc. */
     border-radius: 4px;
     color: white;
 }
@@ -356,6 +357,10 @@ button:hover {
 
 /* Mobile version changes */
 @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.25rem
+    }
+    
     h2 {
         font-size: 3rem;
     }
