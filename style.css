@@ -10,8 +10,8 @@
     --light-colour-1: #e2ebf5;
     --light-colour-2: #A9BCD0;
     --light-colour-3: #B8BCBF;
-    /* --highlight-colour-1: #68c0ce; */
-    --highlight-colour-1: #45d3e9;
+    --highlight-colour-1: #2dd6f0;
+    /* --highlight-colour-1: #45d3e9; */
     /* --highlight-colour-2: #4E919B; */
     --highlight-colour-2: #39b2c5;
     --dark-colour-1: #373F51;
@@ -370,6 +370,14 @@ button:hover {
     .header-social-links
     {
         display: none;
+    }
+
+    #homepage-hero {
+        padding: 0;
+    }
+
+    #intro-desc-big {
+        font-size: 2.5rem;
     }
 
     #project-cards {
