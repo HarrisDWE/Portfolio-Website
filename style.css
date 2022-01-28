@@ -169,13 +169,16 @@ button:hover {
 /* Burger Menu */
 #burger {
     display: none;
+    color: white;
 }
 
 #burger-container {
-    background-color: var(--light-colour-1); /* rgb(7, 8, 8, .1); */
+    /* background-color: rgb(7, 8, 8, .1);  */
+    background-color: var(--dark-colour-2);
     /* padding: .25rem 1.25rem .25rem 1.25rem; */     /* Steam deck esc. */
     padding: .5rem .75rem .5rem .75rem; 
     border-radius: 4px;
+    color: white;
 }
 
 #burger-dropdown-container {
@@ -189,25 +192,26 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background: var(--light-colour-1);  */
-    background: rgba(7, 8, 8, 0.05);
+    background: var(--dark-colour-2); 
+    /* background: rgba(7, 8, 8, 0.05); */
     border-radius: 4px;
+    
 }
 
 .burger-line {
     width: 30px;
     height: 4px;
-    background-color: var(--dark-colour-2);
+    background-color: white;
     margin: 6px 0;
 }
 
 .burger-links {
-    color: var(--dark-colour-2);
+    color: white;
     /* text-align: center; */
     text-decoration: none;
     font-size: 1.4rem;
     padding: 0.75rem 0.5rem;
-    border-bottom: 1px solid var(--dark-colour-2);
+    /* border-bottom: 1px solid white; */
     margin: 0 0.5rem 0 0.5rem;
 }
 
@@ -304,40 +308,8 @@ button:hover {
 }
 
 .project-button {
-    /* Fix the butto position */
+    /* Fix the button position */
 }
-/* .project-card-button {
-
-} */
-
-/* Project card testing*/
-.test-project-card-container {
-    background: var(--light-colour-1);
-    padding: 1.5vh 2vw; 
-    /* was 1rem 2rem */
-    border-radius: 4px;
-    font-size: 1.25rem;
-    color: white;
-    margin-bottom: 3rem;
-}
-.test-project-card-container .p-links {
-    color: var(--dark-colour-2);
-}
-.test-project-card {
-    display: flex;
-    flex-wrap: wrap;
-}
-.test-project-card-main{
-    max-width: 48%;
-}
-.test-project-card-desc {
-    max-width: 48%;
-    margin-left: 2rem;
-}
-
-/*
-    Modal Styling for project cards
-*/
 
 /* ---------------------
     Resume Page Styling
@@ -383,7 +355,7 @@ button:hover {
 }
 
 /* Mobile version changes */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     h2 {
         font-size: 3rem;
     }
@@ -400,11 +372,6 @@ button:hover {
         display: none;
     }
 
-    #homepage-hero {
-        /* Currently broken on a mobile device - not 100vh */
-    }
-
-
     #project-cards {
         justify-content: center;    
     }
@@ -418,10 +385,6 @@ button:hover {
 
     #burger {
         display: flex;
-    }
-
-    #homepage-hero {
-        padding: 0;
     }
 
     #intro-container {
