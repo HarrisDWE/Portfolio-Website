@@ -60,7 +60,7 @@ header a {
 /* Nav menu */
 nav {
     margin: 2rem 0;
-    font-size: 2rem;
+    /* font-size: 2.25rem; */
     font-size: 1.25rem;
     font-weight: 600;
 }
@@ -281,6 +281,10 @@ button:hover {
 .project-card-image {
     max-width: 100%;
 }
+
+.project-button {
+    /* Fix the butto position */
+}
 /* .project-card-button {
 
 } */
@@ -333,17 +337,26 @@ button:hover {
 /* ---------------------
     Media Queries
 --------------------- */
+@media only screen and (max-width: 1024px) {
+    .header-social-links {
+        display: none;
+    }
+}
+
 /* Fix issue where if the dropdown is active it will keep open regardless of the size of the page */
-@media screen and (min-width: 1025px) {    
+@media screen and (min-width: 769px) {    
     #burger {
         display: none;
     }
     #burger-dropdown-container{
         display: none; 
     }    
+
+
 }
 
-@media only screen and (max-width: 1024px) {
+/* Mobile version changes */
+@media only screen and (max-width: 768px) {
     h2 {
         font-size: 3rem;
     }
@@ -359,6 +372,11 @@ button:hover {
     {
         display: none;
     }
+
+    #homepage-hero {
+        /* Currently broken on a mobile device - not 100vh */
+    }
+
 
     #project-cards {
         justify-content: center;    

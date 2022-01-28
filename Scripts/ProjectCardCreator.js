@@ -255,17 +255,19 @@ function addModalDescription(desc, container) {
         }
         //Add video
         if (section.video != "" && section.video != null) {
+            let cont = document.createElement("div");
+            cont.classList.add("iframe-container");
             let video = document.createElement("iframe");
             video.src = section.video;
 
             // Will need to do it in CSS
-            video.width = "80%"; //CHANGE THIS
+            // video.width = "80%"; //CHANGE THIS
             //video.height = "45%"; 
-            video.height = 400; //CHANGE THIS
+            // video.height = 400; //CHANGE THIS
 
             video.setAttribute("allowfullscreen", ""); //enables fullscreen for the built in video player
-
-            sectionContainer.appendChild(video);
+            cont.appendChild(video);
+            sectionContainer.appendChild(cont);
         }
         //Add the section to the container
         container.appendChild(sectionContainer);
