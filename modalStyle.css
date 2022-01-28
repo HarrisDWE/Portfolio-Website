@@ -77,6 +77,10 @@ cursor: pointer;
     color: #1B1B1E;
 }
 
+.modal-header h2 {
+    margin: 1% 5%;
+}
+
 .modal-main {
     padding: 2px 16px;
     height: 80%; 
