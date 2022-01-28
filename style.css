@@ -50,10 +50,8 @@ body a {
 header {
     display: block;
     padding: 1rem var(--main-width-padding);
-
     position: sticky;
     top: 0;
-
     background: white;
 }
 header a {
@@ -103,7 +101,7 @@ footer a {
 
 /* Headings */
 h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin: 0;
 }
 
@@ -351,8 +349,6 @@ button:hover {
     #burger-dropdown-container{
         display: none; 
     }    
-
-
 }
 
 /* Mobile version changes */
