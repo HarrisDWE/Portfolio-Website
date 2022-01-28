@@ -9,6 +9,8 @@
         --highlight-colour-2: #39b2c5;
         --dark-colour-1: #373F51;
         --dark-colour-2: #1B1B1B;
+
+        --modal-box-top-padding: 2%;
 }
 
 .modal-container {
@@ -17,13 +19,13 @@
     z-index: 1; /* Placed on top of rest of the page */
     
     /* Modal box location */
-    padding-top: 7%; 
+    padding-top: var(--modal-box-top-padding); 
     /* margin-bottom: 10%; */
     left: 0;
     top: 0;
     
     width: 100%;
-    height: 100%; 
+    height: calc(98vh - var(--modal-box-top-padding)); 
     /* overflow: auto; */ /*  Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback colour */
     background-color: rgba(0,0,0,0.4); 
@@ -37,7 +39,7 @@
     padding: 0;
     border: 1px solid var(--light-colour-3);
     width: 90%;
-    height: 100%; 
+    height: calc(100vh - var(--modal-box-top-padding)); 
     /* overflow: auto; */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 3px;
@@ -47,11 +49,6 @@
     animation-name: animatetop;
     animation-duration: 0.4s
 }
-
-* img {
-  max-width: 90%;
-}
-  
 
 /* ---------------------
     Animations - Taken from: https://www.w3schools.com/howto/howto_css_modals.asp
@@ -75,6 +72,7 @@
     float: right;
     font-size: 2.5rem;
     font-weight: bold;
+    
 }
 
 .close-button:hover, .close-button:focus {
@@ -91,6 +89,7 @@ cursor: pointer;
 
 .modal-header h2 {
     margin: 1% 5%;
+    font-size: 3.5rem;
 }
 
 .modal-main {
@@ -99,12 +98,30 @@ cursor: pointer;
     overflow: auto;
 }
 
+.modal-desc {
+    height: 100%;
+}
+
 .modal-desc-section {
     margin: 0 5%;
 }
 
+.modal-desc-section h3 {
+    margin: 1rem 0 0.5rem 0;
+}
+
+.modal-desc-section p {
+    margin-bottom: 0;
+}
+
+.modal-desc-section img {
+    width: 90%;
+    display: block;
+    margin: 1rem auto;
+}
+
 /* Taken from: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
-.modal-desc-section iframe {
+.modal-desc-section * iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -118,8 +135,9 @@ cursor: pointer;
 .iframe-container {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 90%;
     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin: 1rem auto;
 }
 
 /* Mobile version changes */
