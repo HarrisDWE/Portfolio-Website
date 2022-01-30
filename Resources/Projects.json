@@ -12,7 +12,7 @@
         "name" : "(WIP) Unreal Brawler Project", 
         "description" : "A third-person brawler game set in a Norse inspired futuristic world. Created in collaboration with a small team in Unreal Engine 4, with my focus being developing the AI, and backend animation and UI systems.",
         "tech" : "Unreal Engine 4 | C++ | Blueprints",
-        "imageSrc" : "../Images/Test-Image.png",
+        "imageSrc" : "../Images/UEB Cover Image.jpg",
         "imageAlt" : "Unreal brawler cover image",
         "linkText" : "",
         "linkSrc" : ""
@@ -30,7 +30,7 @@
         "name" : "Portfolio Website", 
         "description" : "This website. This was an experiment into developing a website from scratch without using any web frameworks and was intended to increase my experience and aptitude with HTML, CSS, and JS. This website dynamically creates and populates the project cards and project content from JSON files.",
         "tech" : "JS | HTML | CSS",
-        "imageSrc" : "../Images/Test-Image.png",
+        "imageSrc" : "../Images/Website Cover Image.jpg",
         "imageAlt" : "Portfolio website cover image",
         "linkText" : "GitHub",
         "linkSrc" : ""
