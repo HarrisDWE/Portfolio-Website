@@ -283,6 +283,7 @@ button:hover {
 #project-showcase {
     margin-top: 5vh;
     /* text-align: center; */
+    padding: var(--home-section-padding);
 }
 #project-cards {
     display: flex;
@@ -310,6 +311,7 @@ button:hover {
 }
 .project-card-image {
     max-width: 100%;
+    justify-content: center;
 }
 
 .project-button {
@@ -341,9 +343,13 @@ button:hover {
 /* ---------------------
     Media Queries
 --------------------- */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1059px) {
     .header-social-links {
         display: none;
+    }
+
+    #project-showcase {
+        padding: 0; 
     }
 }
 
