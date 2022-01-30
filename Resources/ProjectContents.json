@@ -16,7 +16,7 @@
                 "imageAlt" : ""
             },
             { 
-                "text" : "Due to the high probability of officers having no VR experience, all interactions must be intuitive and accessible, and as such I have developed a system which allows officers to perform device interactions in multiple easy-to-use ways. By utilising this custom interaction system officers can navigate UI elements for a device’s interactions using the joystick, or by using their other hand as a pointer, as well as it also allowing for trigger presses to perform the device’s most important interaction.",
+                "text" : "Due to the high probability of officers having no VR experience, all interactions must be intuitive and accessible, and as such I have developed a system which allows officers to perform device interactions in multiple easy-to-use ways. By utilising this custom interaction system officers can navigate UI elements for a device's interactions using the joystick, or by using their other hand as a pointer, as well as it also allowing for trigger presses to perform the device's most important interaction.",
                 "imageSrc" : "./Images/Test-Image.png",
                 "imageAlt" : ""
             },
@@ -31,7 +31,7 @@
                 "imageAlt" : "" 
             },
             { 
-                "text" : "In the future, the VR house environment itself will be created, with this environment replicating the Lancashire Constabulary’s physical training house and featuring the dynamic and randomised placement of key objects and digital devices – encouraging officers to perform a thorough search of the environment. As well as featuring interactions with doors, cupboards, and other household items, to replicate the training house environment as accurately as possible."
+                "text" : "In the future, the VR house environment itself will be created, with this environment replicating the Lancashire Constabulary's physical training house and featuring the dynamic and randomised placement of key objects and digital devices - encouraging officers to perform a thorough search of the environment. As well as featuring interactions with doors, cupboards, and other household items, to replicate the training house environment as accurately as possible."
             }
         ]
     },
@@ -49,7 +49,7 @@
                 "text" : "I was responsible for creating the AI systems and the UI backend for this project. With the AI having custom behaviour and choosing to either attempting to attack the objective based on certain criteria."
             },
             {
-                "text" : "<ul><li>AI attack the player when they have line of sight</li><li>AI will investigate the player’s last known position on loss of sight</li><li>AI attempt to intercept and flank the player</li>AI spread out when attacking the objective – making their behaviour more natural and increasing the challenge for the player</ul>",
+                "text" : "The AI will attack the player if they have line of sight and if x number of AI are not already attacking the player (determined by an AI controller), similarly, those AI will investigate the player's last known position if they loose sight of the player. The AI will also attempt to both intercept and flank the player to try and surround them and will spread out around the objective when attacking to (to avoid clumps on AI), helping to make their behaviour more natural and increasing the challenge for the player.",
                 "video" : ""
             },
             {
@@ -58,7 +58,7 @@
                 "imageAlt" : ""
             },
             {
-                "text" : "For the character controller we were heavily inspired by Overgrowth (and its <a href=”https://www.youtube.com/watch?v=LNidsMesxSE&t=447s” class=”p-links”>procedural animation system</a>), with my focus early on being to implement the animation controller, blendspace, etc. for the main character, and to experiment using the procedural animation technique. This resulted in acceptable walking / running animations, but to achieve our desired level of quality we decided to return to authored animations.",
+                "text" : "For the character controller we were heavily inspired by Overgrowth (and its procedural animation system), with my focus early on being to implement the animation controller, blendspace, etc. for the main character, and to experiment using the procedural animation technique. This resulted in acceptable walking / running animations, but to achieve our desired level of quality we decided to return to authored animations.",
                 "imageSrc" : "./Images/Test-Image.png",
                 "imageAlt" : ""
             }
@@ -75,12 +75,12 @@
             },
             {
                 "heading" : "Project Description",
-                "text" : "I developed a bespoke system to encode and recognise unique touch gestures (as this was developed before the official release of Unity’s new input system), with my system supporting tapping, tap and holding, dragging, and pinching for one and two fingers. Each interaction is assigned at least one gesture and categorised by not only by the touch gesture itself, but also the location on which it is performed (on or off the object). This encoding and detection system is also somewhat abstracted, allowing for minor variations of the gesture to be performed, whilst still recognising the correct input.",
+                "text" : "I developed a bespoke system to encode and recognise unique touch gestures (as this was developed before the official release of Unity's new input system), with my system supporting tapping, tap and holding, dragging, and pinching for one and two fingers. Each interaction is assigned at least one gesture and categorised by not only by the touch gesture itself, but also the location on which it is performed (on or off the object). This encoding and detection system is also somewhat abstracted, allowing for minor variations of the gesture to be performed, whilst still recognising the correct input.",
                 "imageSrc" : "./Images/Test-Image.png",
                 "imageAlt" : ""
             },
             {
-                "text" : "This system is unique in that the user’s perspective of the object determines the axes that the user can manipulate the object on, meaning gestures are kept simple, as they can be re-used for the same interaction on multiple axes. ",
+                "text" : "This system is unique in that the user's perspective of the object determines the axes that the user can manipulate the object on, meaning gestures are kept simple, as they can be re-used for the same interaction on multiple axes. ",
                 "video" : ""
             },
             {
@@ -90,7 +90,7 @@
                 "imageAlt" : ""
             },
             {
-                "text" : "The second was used for evaluation, with it being akin to a “Simon says” game, where users were timed when performing an interaction (e.g. moving the object into a square on the screen), when using different interaction methods. For this, I developed a UI based system which translated the touch gestures into UI elements, but still made use of the user’s perspective to determine the available axis. This app compared the bespoke interaction system, to the same manipulation of a physical object, and the UI-based approach.",
+                "text" : "The second was used for evaluation, with it being akin to a “Simon says” game, where users were timed when performing an interaction (e.g. moving the object into a square on the screen), when using different interaction methods. For this, I developed a UI based system which translated the touch gestures into UI elements, but still made use of the user's perspective to determine the available axis. This app compared the bespoke interaction system, to the same manipulation of a physical object, and the UI-based approach.",
                 "video" : ""
             }
         ]
@@ -103,6 +103,9 @@
             { 
                 "heading": "Overview",
                 "text" : "This was an exploration into developing a website from scratch using HTML, CSS, and JS, without making use of frameworks such as Bootstrap or JQuery. The most unique aspect about the site is that it utilises two JSON files to store and dynamically create new project cards, and their content, making adding new projects to the site far easier."
+            },
+            {
+                "text" : "The website is currently being hosted using GitHub Pages and is linked to a custom domain \"DanHarris.Online\". Testing before deployment is done using node.js and the \"live-server\" addon."
             },
             { 
                 "heading": "Project Description",
