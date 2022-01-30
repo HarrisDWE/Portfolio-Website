@@ -2,7 +2,6 @@ window.addEventListener("DOMContentLoaded", createProjects);
 
 
 function createProjects() {
-    //http://localhost:8000/Resources/Projects.json
     fetch("./Resources/Projects.json")
     .then(response => {
         if (!response.ok) {
@@ -13,7 +12,7 @@ function createProjects() {
         .then(data => addProjects(data))
         .catch(err => console.log("JSON load error:" + err))
 
-    fetch("./Resources/Modals.json")
+    fetch("./Resources/ProjectContents.json")
     .then(response => {
         if (!response.ok) {
             throw new Error("HTTP error " + response.status);
@@ -22,26 +21,6 @@ function createProjects() {
     })
         .then(data => addModals(data))
         .catch(err => console.log("JSON load error:" + err))
-    
-    //Hard code Testing
-    // addProjects([{
-    //     "name" : "Testing JSON", 
-    //     "description" : "this is an example description",
-    //     "tech" : "currently just text, but will change to images later",
-    //     "imageSrc" : "../Images/Test-Image.png",
-    //     "imageAlt" : "This is alt text",
-    //     "linkText" : "Example Link",
-    //     "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    // },
-    // {
-    //     "name" : "Testing JSON 2", 
-    //     "description" : " 2this is an example description",
-    //     "tech" : "currently just text, but will change to images later",
-    //     "imageSrc" : "../Images/Test-Image.png",
-    //     "imageAlt" : "This is alt text",
-    //     "linkText" : "Example Link",
-    //     "linkSrc" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    // }])
 }
 
 
@@ -143,20 +122,24 @@ function addCardContentToDOM(projectData, pageElem) {
     // mainDiv[0].appendChild(pageElem.container);
 }
 
+// Modal structure
+/*
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Modal Header</h2>
+        </div>
+        <div class="modal-body">
+            <p>Some text in the Modal Body</p>
+            <p>Some other text...</p>
+        </div>
+    </div>
+</div>
+*/
 function createModalElements() {
-    // <div id="myModal" class="modal">
-    //                 <!-- Modal content -->
-    //                 <div class="modal-content">
-    //                     <div class="modal-header">
-    //                         <span class="close">&times;</span>
-    //                         <h2>Modal Header</h2>
-    //                     </div>
-    //                     <div class="modal-body">
-    //                         <p>Some text in the Modal Body</p>
-    //                         <p>Some other text...</p>
-    //                     </div>
-    //                 </div>
-    //             </div>
+
 
 
     //Define key variables
@@ -207,9 +190,6 @@ function addModalContentToDOM(modalData, pageElem) {
     if (modalData.content != null) {
         addModalDescription(modalData.content, pageElem.desc); //pass in the description container 
     }
-    
-    // pageElem.img.src = modalData.imageSrc;
-    // pageElem.img.alt = modalData.imageAlt;
 
     //Add to DOM
     let modalContainer = document.getElementById("modal-boxes")
@@ -220,8 +200,6 @@ function addModalContentToDOM(modalData, pageElem) {
 
 function addModalDescription(desc, container) {
     //Create an overall container
-    // let container = document.createElement("div");
-
     desc.forEach(section => {
         console.log(section);
         //Create the container for each section
@@ -259,11 +237,6 @@ function addModalDescription(desc, container) {
             cont.classList.add("iframe-container");
             let video = document.createElement("iframe");
             video.src = section.video;
-
-            // Will need to do it in CSS
-            // video.width = "80%"; //CHANGE THIS
-            //video.height = "45%"; 
-            // video.height = 400; //CHANGE THIS
 
             video.setAttribute("allowfullscreen", ""); //enables fullscreen for the built in video player
             cont.appendChild(video);

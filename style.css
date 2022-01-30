@@ -14,7 +14,7 @@
     /* --highlight-colour-1: #45d3e9; */
     /* --highlight-colour-2: #4E919B; */
     --highlight-colour-2: #39b2c5;
-    --dark-colour-1: #373F51;
+    --dark-colour-1: #363942;
     --dark-colour-2: #1B1B1B;
 
 /*     
@@ -24,7 +24,8 @@
     --highlight-colour-2: rgb(216, 65, 65);
     --dark-colour-1: rgb(32, 48, 64);
     --dark-colour-2: rgb(32, 48, 64);  */
-   
+ 
+    /* 248,249,250 */
 }
 
 html {
@@ -38,6 +39,11 @@ body {
     font-weight: 400;
     font-size: 1.25rem;
     color: var(--dark-colour-2);
+
+    /* This makes all characters inline with one another - I don't like the default way numbers are laid out */
+    -webkit-font-feature-settings: "lnum";
+    -moz-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
     
     padding: 0;
     margin: 0;
@@ -286,7 +292,7 @@ button:hover {
 
 .project-card-container {
     /* color: var(--light-colour-3); */
-    /* background: var(--dark-colour-2); */
+    /* background: var(--dark-colour-1); */
     /* border-color : var(--light-colour-3); */
     border: 1px solid var(--light-colour-3);
     padding: 1rem 2rem;
