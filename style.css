@@ -373,6 +373,10 @@ button:hover {
         margin: 0 0.5rem;
     }
 
+    .section-content-container {
+        padding : 0 calc(var(--main-width-padding) / 2 )
+    }
+
     #project-cards {
         justify-content: center;    
     }
