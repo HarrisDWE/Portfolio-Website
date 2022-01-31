@@ -12,22 +12,20 @@
             { 
                 "heading": "Project Description",
                 "text" : "Currently, the project offers several unique interactions with various digital objects, for instance turning a phone / tablet on and off, browsing its contents, and removing a SIM / SD card. ",
-                "imageSrc" : "./Images/Test-Image.png",
+                "imageSrc" : "./Images/Tablet.gif",
                 "imageAlt" : ""
             },
             { 
-                "text" : "Due to the high probability of officers having no VR experience, all interactions must be intuitive and accessible, and as such I have developed a system which allows officers to perform device interactions in multiple easy-to-use ways. By utilising this custom interaction system officers can navigate UI elements for a device's interactions using the joystick, or by using their other hand as a pointer, as well as it also allowing for trigger presses to perform the device's most important interaction.",
-                "imageSrc" : "./Images/Test-Image.png",
-                "imageAlt" : ""
+                "text" : "Due to the high probability of officers having no VR experience, all interactions must be intuitive and accessible, and as such I have developed a system which allows officers to perform device interactions in multiple easy-to-use ways. By utilising this custom interaction system officers can navigate UI elements for a device's interactions using the joystick, or by using their other hand as a pointer, as well as it also allowing for trigger presses to perform the device's most important interaction."
             },
             { 
                 "text" : "Officers are also graded on their performance within the experience, with each device having a set of questions that officers must answer using pre-defined responses. However, as these questions and responses can change in the wider organisation, I have developed a system to dynamically create the UI for each question based on scriptable objects that contain the questions and responses for each digital device. Meaning, these questions and responses can easily be updated without having to change any objects within the scene.",
-                "imageSrc" : "./Images/Test-Image.png",
+                "imageSrc" : "./Images/Question Interaction.gif",
                 "imageAlt" : ""
             },
             { 
                 "text" : "Similarly, this Q&A forms part of a competence scoring system, that not only allows officers to review their performance in VR, but will also produce a text report file, which will feed directly into the ISO accreditation process.",
-                "imageSrc" : "./Images/Test-Image.png",
+                "imageSrc" : "./Images/Questions.gif",
                 "imageAlt" : "" 
             },
             { 
