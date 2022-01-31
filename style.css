@@ -311,6 +311,7 @@ button:hover {
 }
 .project-card-image {
     max-width: 100%;
+    object-fit: scale-down;
     justify-content: center;
 }
 

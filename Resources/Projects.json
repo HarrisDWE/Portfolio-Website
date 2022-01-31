@@ -21,7 +21,7 @@
         "name" : "3D Object Manipulation in AR (BSc Project)", 
         "description" : "This project forms the basis for the research paper I wrote and submitted to an international conference, as well as my BSc dissertation. It includes a unique and novel technique for 3D object interaction in AR on mobile devices, as well as the various applications used for developing and evaluating this technique.",
         "tech" : "Unity | C# | ARFoundation",
-        "imageSrc" : "../Images/Test-Image.png",
+        "imageSrc" : "../Images/TYP Cover Image.jpg",
         "imageAlt" : "Object manipulation cover image",
         "linkText" : "GitHub",
         "linkSrc" : ""
