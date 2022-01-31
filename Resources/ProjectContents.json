@@ -76,22 +76,20 @@
             {
                 "heading" : "Project Description",
                 "text" : "I developed a bespoke system to encode and recognise unique touch gestures (as this was developed before the official release of Unity's new input system), with my system supporting tapping, tap and holding, dragging, and pinching for one and two fingers. Each interaction is assigned at least one gesture and categorised by not only by the touch gesture itself, but also the location on which it is performed (on or off the object). This encoding and detection system is also somewhat abstracted, allowing for minor variations of the gesture to be performed, whilst still recognising the correct input.",
-                "imageSrc" : "./Images/Test-Image.png",
-                "imageAlt" : ""
+                "video" : "https://www.youtube.com/embed/_6X1hycDETM?"
             },
             {
-                "text" : "This system is unique in that the user's perspective of the object determines the axes that the user can manipulate the object on, meaning gestures are kept simple, as they can be re-used for the same interaction on multiple axes. ",
-                "video" : ""
+                "text" : "This system is unique in that the user's perspective of the object determines the axes that the user can manipulate the object on, meaning gestures are kept simple, as they can be re-used for the same interaction on multiple axes. "
             },
             {
                 "heading" : "Additional Applications",
                 "text" : "To design and evaluate this interaction system two other applications were developed. The first recorded users touch gestures when performing a given interaction (e.g. scaling), and outputted as JSON file with data such as the number of fingers, and the position each frame of the fingers. With this being used to help encode and determine the gestures used by the interaction system.",
-                "imageSrc" : "./Images/Test-Image.png",
-                "imageAlt" : ""
+                "imageSrc" : "./Images/All GES Tasks.gif",
+                "imageAlt" : "A gif showing various animations"
             },
             {
                 "text" : "The second was used for evaluation, with it being akin to a “Simon says” game, where users were timed when performing an interaction (e.g. moving the object into a square on the screen), when using different interaction methods. For this, I developed a UI based system which translated the touch gestures into UI elements, but still made use of the user's perspective to determine the available axis. This app compared the bespoke interaction system, to the same manipulation of a physical object, and the UI-based approach.",
-                "video" : ""
+                "video" : "https://www.youtube.com/embed/K8WMOohHseQ?"
             }
         ]
     },
@@ -113,8 +111,7 @@
             },
             { 
                 "text" : "The most notable aspect to the website is its dynamic loading of project data, with all project cards, and their content being loaded from two JSON files. A JS script I developed parses the JSON files and automatically creates the project cards and its contents (displayed in the modal), with the idea being to make adding new projects to the website a painless process.",
-                "imageSrc" : "./Images/Test-Image.png",
-                "imageAlt" : ""
+                "video" : "https://www.youtube.com/embed/KwUOzOsLVMQ?"
             },
             {
                 "text" : "Whilst it currently is at an acceptable state, I still plan on improving the code as well as iterating upon its design and functionality. For instance, I intended for the dynamic project loading to allow for even more elements and an even more flexible design of the project card / contents. I also plan on creating the functionality for me to upload a text file and for the website automatically parse it and add it to its respective JSON file, making the addition of projects even easier."
