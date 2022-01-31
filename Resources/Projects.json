@@ -10,7 +10,7 @@
     },
     {
         "name" : "(WIP) Unreal Brawler Project", 
-        "description" : "A third-person brawler game set in a Norse inspired futuristic world. Created in collaboration with a small team in Unreal Engine 4, with my focus being developing the AI, and backend animation and UI systems.",
+        "description" : "A third-person brawler game set in a Norse inspired futuristic world. Created in collaboration with a small team in Unreal Engine 4, with my focus being to develop the AI, backend animation and UI systems.",
         "tech" : "Unreal Engine 4 | C++ | Blueprints",
         "imageSrc" : "../Images/UEB Cover Image.jpg",
         "imageAlt" : "Unreal brawler cover image",
