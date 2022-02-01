@@ -47,18 +47,15 @@
                 "text" : "I was responsible for creating the AI systems and the UI backend for this project. With the AI having custom behaviour and choosing to either attempting to attack the objective based on certain criteria."
             },
             {
-                "text" : "The AI will attack the player if they have line of sight and if x number of AI are not already attacking the player (determined by an AI controller), similarly, those AI will investigate the player's last known position if they loose sight of the player. The AI will also attempt to both intercept and flank the player to try and surround them and will spread out around the objective when attacking to (to avoid clumps on AI), helping to make their behaviour more natural and increasing the challenge for the player.",
-                "video" : ""
+                "text" : "The AI will attack the player if they have line of sight and if x number of AI are not already attacking the player (determined by an AI controller), similarly, those AI will investigate the player's last known position if they lose sight of the player. The AI will also attempt to both intercept and flank the player to try and surround them and will spread out around the objective when attacking to (to avoid clumps on AI), helping to make their behaviour more natural and increasing the challenge for the player.",
+                "video" : "https://www.youtube.com/embed/O9Tb0yvup7M?"
             },
             {
-                "text" : "The UI for this project included a functioning HUD for the player, displaying their health and the health of the objective, in addition to a main menu, pause menu, and settings menu, alongside a game over screen.",
-                "imageSrc" : "./Images/Test-Image.png",
-                "imageAlt" : ""
+                "text" : "The UI for this project included a functioning HUD for the player, displaying their health and the health of the objective, in addition to a main menu, pause menu, and settings menu, alongside a game over screen."
             },
             {
-                "text" : "For the character controller we were heavily inspired by Overgrowth (and its procedural animation system), with my focus early on being to implement the animation controller, blendspace, etc. for the main character, and to experiment using the procedural animation technique. This resulted in acceptable walking / running animations, but to achieve our desired level of quality we decided to return to authored animations.",
-                "imageSrc" : "./Images/Test-Image.png",
-                "imageAlt" : ""
+                "text" : "For the character controller we were heavily inspired by Overgrowth (and its procedural animation system), with my focus early on being to implement the animation controller, blendspace, etc. for the main character. I also initially experimented using procedural animation techniques, although we eventually decided on using authored animations (as seen below).",
+                "video" : "https://www.youtube.com/embed/Ja5FeJKe57I?"
             }
         ]
     },
