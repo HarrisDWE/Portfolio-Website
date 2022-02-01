@@ -201,7 +201,7 @@ function addModalContentToDOM(modalData, pageElem) {
 function addModalDescription(desc, container) {
     //Create an overall container
     desc.forEach(section => {
-        console.log(section);
+        // console.log(section);
         //Create the container for each section
         let sectionContainer = document.createElement("div");
         sectionContainer.classList.add("modal-desc-section");
@@ -256,9 +256,9 @@ function setupModals() {
     let modals = document.getElementsByClassName("modal-container");
     let closeButtons = document.getElementsByClassName("close-button");
 
-    console.log("Project Buttons: " + projectButtons.length);
-    console.log("Modals: " + projectButtons.length);
-    console.log("Close Buttons: " + closeButtons.length);
+    // console.log("Project Buttons: " + projectButtons.length);
+    // console.log("Modals: " + projectButtons.length);
+    // console.log("Close Buttons: " + closeButtons.length);
 
     if (projectButtons.length == modals.length) {
         for (i = 0; i < projectButtons.length; i++) {
@@ -271,7 +271,7 @@ function setupModals() {
         }
     }
     else {
-        console.log("The number of modals does not match the number of projects!");
+        // console.log("The number of modals does not match the number of projects!");
     }
 }
 
