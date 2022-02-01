@@ -23,8 +23,6 @@
         "tech" : "Unity | C# | ARFoundation",
         "imageSrc" : "../Images/TYP Cover Image.jpg",
         "imageAlt" : "Object manipulation cover image",
-        "linkText" : "GitHub",
-        "linkSrc" : ""
     },
     {
         "name" : "Portfolio Website", 
@@ -32,7 +30,5 @@
         "tech" : "JS | HTML | CSS",
         "imageSrc" : "../Images/Website Cover Image.jpg",
         "imageAlt" : "Portfolio website cover image",
-        "linkText" : "GitHub",
-        "linkSrc" : ""
     }
 ]
