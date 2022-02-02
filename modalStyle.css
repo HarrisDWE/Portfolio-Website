@@ -92,6 +92,10 @@
     margin-bottom: 0;
 }
 
+.modal-desc li {
+    margin-bottom: .25rem;
+}
+
 .modal-desc-section img {
     width: var(--video-width-desktop);
     display: block;

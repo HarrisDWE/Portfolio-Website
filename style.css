@@ -112,7 +112,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin: 0;
 }
 
@@ -246,8 +246,12 @@ button:hover {
     color: var(--light-colour-3);
 }
 
-#intro-contact {
-    margin-top: 4rem;
+#intro-projects {
+    margin-top: 2rem;
+}
+
+#intro-contact  {
+    margin-top: 6rem;
 }
 
 .section {

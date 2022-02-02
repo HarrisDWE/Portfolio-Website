@@ -1,7 +1,7 @@
 [
     {
         "name" : "(WIP) VR Training House", 
-        "description" : "A VR experience used to train officers within the Lancashire Constabulary on how to interact with digital devices. With a keen focus on the usability and accessibility of the experience and device interactions.",
+        "description" : "A VR experience used to train officers within the Lancashire Constabulary on how to interact with digital devices. Focusing on the usability and accessibility of gameplay and understandable and maintainable code.",
         "tech" : "Unity | C# | XR Interaction Toolkit",
         "imageSrc" : "../Images/VR House Cover Image.jpg",
         "imageAlt" : "VR digital training house cover image",
@@ -10,7 +10,7 @@
     },
     {
         "name" : "(WIP) Unreal Brawler Project", 
-        "description" : "A third-person brawler game set in a Norse inspired futuristic world. Created in collaboration with a small team in Unreal Engine 4, with my focus being to develop the AI, backend animation and UI systems.",
+        "description" : "A third-person brawler game set in a Norse inspired futuristic world. Created in collaboration with a small team in Unreal Engine 4, with my focus being to develop the AI, animation, and UI systems.",
         "tech" : "Unreal Engine 4 | C++ | Blueprints",
         "imageSrc" : "../Images/UEB Cover Image.jpg",
         "imageAlt" : "Unreal brawler cover image",
@@ -19,7 +19,7 @@
     },
     {
         "name" : "3D Object Manipulation in AR (BSc Project)", 
-        "description" : "This project forms the basis for the research paper I wrote and submitted to an international conference, as well as my BSc dissertation. It includes a unique and novel technique for 3D object interaction in AR on mobile devices, as well as the various applications used for developing and evaluating this technique.",
+        "description" : "This forms the basis for my BSc dissertation and subsequent (submitted) research paper. It includes a unique and novel interaction technique for 3D object manipulation in AR on mobile devices.",
         "tech" : "Unity | C# | ARFoundation",
         "imageSrc" : "../Images/TYP Cover Image.jpg",
         "imageAlt" : "Object manipulation cover image",
@@ -28,7 +28,7 @@
     },
     {
         "name" : "Portfolio Website", 
-        "description" : "This website. This was an experiment into developing a website from scratch without using any web frameworks and was intended to increase my experience and aptitude with HTML, CSS, and JS. This website dynamically creates and populates the project cards and project content from JSON files.",
+        "description" : "This website. Aan experiment into developing a website from scratch without using any web frameworks. Supporting the dynamic creation and population of project cards and descriptions using JSON files.",
         "tech" : "JS | HTML | CSS",
         "imageSrc" : "../Images/Website Cover Image.jpg",
         "imageAlt" : "Portfolio website cover image",

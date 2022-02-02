@@ -40,26 +40,51 @@
         "content" : [
             { 
                 "heading" : "Overview",
-                "text" : "I created this game in collaboration with two artists/animators and one other programmer, with our intention being to create a polished character controller and demonstrate this in a Norse inspired futuristic setting and using a wave-based defence mode to showcase our AI and combat system.",
+                "text" : "This project was created as part of a four-person team using Unreal Engine 4, with my responsibilities primarily being: ",
                 "list" : [
-                    { "item" : "test" },
-                    { "item" : "test 2" }
+                    { "item" : "Developing the AI systems (using behaviour trees and blackboards)" },
+                    { "item" : "Developing the backend animation systems" },
+                    { "item" : "Developing the UI systems" },
+                    { "item" : "Refining the gameplay systems" }
                 ]
             },
             {
-                "heading" : "Project Description",
-                "text" : "I was responsible for creating the AI systems and the UI backend for this project. With the AI having custom behaviour and choosing to either attempting to attack the objective based on certain criteria."
-            },
-            {
-                "text" : "The AI will attack the player if they have line of sight and if x number of AI are not already attacking the player (determined by an AI controller), similarly, those AI will investigate the player's last known position if they lose sight of the player. The AI will also attempt to both intercept and flank the player to try and surround them and will spread out around the objective when attacking to (to avoid clumps on AI), helping to make their behaviour more natural and increasing the challenge for the player.",
+                "text" : "I was responsible for creating the AI systems, which makes use of an custom AI controller, behaviour trees, blackboards, and well as code written in both C++ and blueprints. ",
                 "video" : "https://www.youtube.com/embed/O9Tb0yvup7M?"
             },
             {
-                "text" : "The UI for this project included a functioning HUD for the player, displaying their health and the health of the objective, in addition to a main menu, pause menu, and settings menu, alongside a game over screen."
+                "text" : "I was also responsible for creating the UI and the backend animations systems (e.g. animation controllers), for both the player and AI.",
+                "video" : "https://www.youtube.com/embed/Ja5FeJKe57I?"
             },
             {
-                "text" : "For the character controller we were heavily inspired by Overgrowth (and its procedural animation system), with my focus early on being to implement the animation controller, blendspace, etc. for the main character. I also initially experimented using procedural animation techniques, although we eventually decided on using authored animations (as seen below).",
-                "video" : "https://www.youtube.com/embed/Ja5FeJKe57I?"
+                "heading" : "AI Systems",
+                "text" : "The AI exhibit custom behaviour depending on a set of criteria, with the AI being able to:",
+                "list" : [
+                    { "item" : "Patrol the environment" },
+                    { "item" : "Intercept and flank the player when attacking" },
+                    { "item" : "Investigate the player's last known position on sight loss" },
+                    { "item" : "Make smart decisions whether to attack the player or objective" },
+                    { "item" : "Spread out when attacking objectives to increase believability and challenge" }
+                ]
+            },
+            {
+                "heading" : "Animation Systems",
+                "text" : "For the character controller, we were heavily inspired by Overgrowth's procedural animation systems (with I initially experimenting using procedural animation early on in the project). With the final animation system I developed making use of: ",
+                "list" : [
+                    { "item" : "Blueprints (event graph)" },
+                    { "item" : "Animation state machines" },
+                    { "item" : "1D & 2D blend spaces" }
+                ]
+            },
+            {
+                "heading" : "UI Systems",
+                "text" : "With the UI I developed for this project including:", 
+                "list" : [
+                    { "item" : "Player HUD (including the player's and objective's text and health bars)" },
+                    { "item" : "Main menu" },
+                    { "item" : "Pause menu" },
+                    { "item" : "Basic settings & graphics menus" }
+                ]
             }
         ]
     },
