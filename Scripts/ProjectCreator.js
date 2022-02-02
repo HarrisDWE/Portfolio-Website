@@ -139,9 +139,6 @@ function addCardContentToDOM(projectData, pageElem) {
 </div>
 */
 function createModalElements() {
-
-
-
     //Define key variables
     let modalContainer = document.createElement("div");
     let modalContent = document.createElement("div");
@@ -220,6 +217,18 @@ function addModalDescription(desc, container) {
 
             sectionContainer.appendChild(text);
         }
+        //Add list
+        if (section.list !="" && section.list != null) {
+            let list = document.createElement("ul");
+            section.list.forEach(item => {
+                let li = document.createElement("li");
+                li.appendChild(document.createTextNode(item.item))
+                list.appendChild(li);
+            });
+
+            sectionContainer.appendChild(list);
+        }
+
         //Add image
         if (section.imageSrc != "" && section.imageSrc != null) {
             let img = document.createElement("img");

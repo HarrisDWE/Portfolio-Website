@@ -40,7 +40,11 @@
         "content" : [
             { 
                 "heading" : "Overview",
-                "text" : "I created this game in collaboration with two artists/animators and one other programmer, with our intention being to create a polished character controller and demonstrate this in a Norse inspired futuristic setting and using a wave-based defence mode to showcase our AI and combat system."
+                "text" : "I created this game in collaboration with two artists/animators and one other programmer, with our intention being to create a polished character controller and demonstrate this in a Norse inspired futuristic setting and using a wave-based defence mode to showcase our AI and combat system.",
+                "list" : [
+                    { "item" : "test" },
+                    { "item" : "test 2" }
+                ]
             },
             {
                 "heading" : "Project Description",
