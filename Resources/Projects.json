@@ -30,14 +30,14 @@
         "name" : "Unreal Engine 4 & C++ Course", 
         "description" : "This is a showcase of some of the games I developed and techniques learned as part of the Unreal Engine C++ Developer course.",
         "tech" : "Unreal Engine 4 | C++ | Blueprints",
-        "imageSrc" : "../Images/TYP Cover Image.jpg",
+        "imageSrc" : "../Images/UE Course Cover Image.png",
         "imageAlt" : "Object manipulation cover image",
         "linkText" : "Course",
         "linkSrc" : "https://www.udemy.com/course/unrealcourse/"
     },
     {
         "name" : "Unity RPG Combat Creator Course", 
-        "description" : "This is a showcase of some of the games I developed and techniques learned as part of the Unity RPG Core Combat Creator course.",
+        "description" : "This is a showcase of some of the game I developed and techniques learned as part of the Unity RPG Core Combat Creator course.",
         "tech" : "Unity | C# ",
         "imageSrc" : "../Images/TYP Cover Image.jpg",
         "imageAlt" : "Object manipulation cover image",
@@ -46,7 +46,7 @@
     },
     {
         "name" : "Portfolio Website", 
-        "description" : "This website. Aan experiment into developing a website from scratch without using any web frameworks. Supporting the dynamic creation and population of project cards and descriptions using JSON files.",
+        "description" : "This website. An experiment into developing a website from scratch without using any web frameworks. Supporting the dynamic creation and population of project cards and descriptions using JSON files.",
         "tech" : "JS | HTML | CSS",
         "imageSrc" : "../Images/Website Cover Image.jpg",
         "imageAlt" : "Portfolio website cover image",

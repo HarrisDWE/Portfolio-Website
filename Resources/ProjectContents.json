@@ -167,7 +167,36 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : ""
+                "text" : "This course gave me a solid understanding of many C++ and Unreal Engine 4 principles, which I then took futher to future projects. The coursed touched on several key areas such as:",
+                "list" : [
+                    { "item" : "Unreal tools and Unreal specific C++" },
+                    { "item" : "Player input handling and developing gameplay features" },
+                    { "item" : "Basic AI using behaviour trees, blackboards, and C++ Tasks / Services" },
+                    { "item" : "Working with high-quality assets" }
+                ],
+                "imageSrc" : "./Images/UECourse Combat.gif" 
+            },
+            {
+                "heading" : "Course Content",
+                "subheading" : "Final Game",
+                "text" : "The final game developed as part of this project was a third-person shooter, which focused on creating a complete experience using high-quality assets, where the player must fight through a level filled with AI. This game included:",
+                "list" : [
+                    { "item" : "Movement mechanics" },
+                    { "item" : "Shooting mechanics (raycasting, hit detection, sounds, and visuals)" },
+                    { "item" : "Keyboard & mouse / controller input" },
+                    { "item" : "AI which shoot the player and investigate on sightloss" },
+                    { "item" : "Working with animations, and creating blendspaces, using aim offsets, etc." }
+                ],
+                "imageSrc" : "./Images/UECourse Movement.gif"
+            },
+            {
+                "subheading" : "Other Games",
+                "text" : "The course had several other game projects to complete, which covered several topics such as diving into the fundamentals of character movement. With one game being to create a basic tank character, and rotating AI which shoot at the player.",
+                "imageSrc" : "./Images/UECourse Tank.gif"
+            },
+            {
+                "subheading" : "Course Takeaways",
+                "text" : "Completing the course gave me an solid understanding of how to develop games using Unreal Engine 4, which I later took futher in subsequent projects. The course taught me how to program gameplay systems within Unreal Engine, using C++, as well as how to integrate these gameplay systems with other aspects of the project, such as AI, UI, 'game modes', etc."
             }
         ]
     },
@@ -178,7 +207,15 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "This was an exploration into developing a website from scratch using HTML, CSS, and JS, without making use of frameworks such as Bootstrap or JQuery. The most unique aspect about the site is that it utilises two JSON files to store and dynamically create new project cards, and their content, making adding new projects to the site far easier."
+                "text" : "RPG.",
+                "list" : [
+                    { "item" : "" }
+                ],
+                "imageSrc" : ""
+            },
+            {
+                "heading" : "Course Content",
+                "text" : ""
             }
         ]
     },

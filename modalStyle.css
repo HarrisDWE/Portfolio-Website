@@ -74,6 +74,7 @@
     padding: 2px 16px;
     overflow-y: auto;
     /* overflow-y: auto; */
+    padding-bottom: 2.25rem;
 }
 
 .modal-desc {
