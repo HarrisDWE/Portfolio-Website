@@ -4,32 +4,55 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "Currently being developed as part of a 10-week placement (starting the 17th of January), at the Lancashire Constabulary. The goal of this VR experience is to educate officers on how to interact with common digital items found at crime scenes, and grade them based on their actions within the experience."
+                "text" : "Currently being developed as part of a 10-week placement (starting 17/01/22) at the Lancashire Constabulary, using Unity 2021, C#, and the XR Interaction Toolkit, with support for all common 6DOF VR headsets."
             },
             {
-                "text" : "The project is being developed using Unity 2021.2, C#, and the XR Interaction Toolkit, with support of all common 6DOF VR headsets. The project is primarily focused on three key areas, the intricate digital device interactions, a dynamic Q&A and scoring system, and the VR house environment itself."
+                "text" : "Currently the key features are:",
+                "list" : [
+                    { "item": "Beskope systems for intuitive interactions using a variety of digital devices" },
+                    { "item" : "Automated and dynamic creation of Q&A UI elements" },
+                    { "item" : "Accessible VR gameplay" },
+                    { "item" : "Animated interactions with realistic digital devices"},
+                    { "item" : "Performance scoring and review systems" }
+                ]
             },
             { 
                 "heading": "Project Description",
-                "text" : "Currently, the project offers several unique interactions with various digital objects, for instance turning a phone / tablet on and off, browsing its contents, and removing a SIM / SD card. ",
+                "subheading" : "Gameplay / Device Interactions",
+                "text" : "Currently, the project offers several unique and animated interactions with various digital objects, for instance turning devices on/off, browsing their contents, etc. ",
                 "imageSrc" : "./Images/Tablet.gif",
                 "imageAlt" : ""
             },
             { 
-                "text" : "Due to the high probability of officers having no VR experience, all interactions must be intuitive and accessible, and as such I have developed a system which allows officers to perform device interactions in multiple easy-to-use ways. By utilising this custom interaction system officers can navigate UI elements for a device's interactions using the joystick, or by using their other hand as a pointer, as well as it also allowing for trigger presses to perform the device's most important interaction."
+                "text" : "To make the interactions as accessible as possible, I have developed an interaction UI system which allows users to navigate the UI / interact with devices in multiple ways, using: ",
+                "list" : [
+                    { "item" : "Controller's joytick and buttons" },
+                    { "item": "Controller's triggers" },
+                    { "item" : "Raycast from the other hand/controller" }
+                ],
+                "imageSrc" : "./Images/Tablet.gif",
+                "imageAlt" : ""
             },
-            { 
-                "text" : "Officers are also graded on their performance within the experience, with each device having a set of questions that officers must answer using pre-defined responses. However, as these questions and responses can change in the wider organisation, I have developed a system to dynamically create the UI for each question based on scriptable objects that contain the questions and responses for each digital device. Meaning, these questions and responses can easily be updated without having to change any objects within the scene.",
+            {
+                "text" : "Officers are graded on their performance in multiple ways, with the primary metric being their responses to a set of device oriented questions. The UI for these questions are automatically populated and made functional using custom code and scriptable objects.",
                 "imageSrc" : "./Images/Question Interaction.gif",
                 "imageAlt" : ""
             },
             { 
-                "text" : "Similarly, this Q&A forms part of a competence scoring system, that not only allows officers to review their performance in VR, but will also produce a text report file, which will feed directly into the ISO accreditation process.",
+                "text" : "Officers are also able to review their performance in-game, utilising various (interactable) UI elements, with these UI elements being automatically updated based on the users performance.",
                 "imageSrc" : "./Images/Questions.gif",
                 "imageAlt" : "" 
             },
             { 
-                "text" : "In the future, the VR house environment itself will be created, with this environment replicating the Lancashire Constabulary's physical training house and featuring the dynamic and randomised placement of key objects and digital devices - encouraging officers to perform a thorough search of the environment. As well as featuring interactions with doors, cupboards, and other household items, to replicate the training house environment as accurately as possible."
+                "text" : "In the future, several more features are planned, for instance:",
+                "list" : [
+                    { "item" : "Realistic VR house environment" },
+                    { "item" : "Physically based door, cupboard, and draw interactions" },
+                    { "item" : "Dynamic and randomised placement of key objects and digital items" },
+                    { "item" : "Performance report generation used for ISO accreditation" },
+                    { "item" : "Oculus Quest/Quest 2 Standalone application"},
+                    { "item" : "(3DOF) Pico G2 Port" }
+                ]
             }
         ]
     },
@@ -53,11 +76,11 @@
                 "video" : "https://www.youtube.com/embed/O9Tb0yvup7M?"
             },
             {
-                "text" : "I was also responsible for creating the UI and the backend animations systems (e.g. animation controllers), for both the player and AI.",
+                "text" : "I was also responsible for creating the UI and the animations systems (animation controllers, blend spaces, etc.), for both the player and AI.",
                 "video" : "https://www.youtube.com/embed/Ja5FeJKe57I?"
             },
             {
-                "heading" : "AI Systems",
+                "subheading" : "AI Systems",
                 "text" : "The AI exhibit custom behaviour depending on a set of criteria, with the AI being able to:",
                 "list" : [
                     { "item" : "Patrol the environment" },
@@ -68,7 +91,7 @@
                 ]
             },
             {
-                "heading" : "Animation Systems",
+                "subheading" : "Animation Systems",
                 "text" : "For the character controller, we were heavily inspired by Overgrowth's procedural animation systems (with I initially experimenting using procedural animation early on in the project). With the final animation system I developed making use of: ",
                 "list" : [
                     { "item" : "Blueprints (event graph)" },
@@ -77,7 +100,7 @@
                 ]
             },
             {
-                "heading" : "UI Systems",
+                "subheading" : "UI Systems",
                 "text" : "With the UI I developed for this project including:", 
                 "list" : [
                     { "item" : "Player HUD (including the player's and objective's text and health bars)" },
@@ -95,25 +118,47 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "This project forms the basis for the research paper I wrote and submitted to an international conference, as well as my BSc dissertation. It is primarily concerned with allowing 3D objects to be manipulated with Six Degrees-Of-Freedom (6DOF) (i.e. allowing for them to be translated and rotated on all 3-axis), in AR. Without sacrificing granular control and without requiring complex touch gestures, with current mobile AR interaction systems having either (or both) of these limitations, or simply failing to offer full 6DOF control."
+                "text" : "This project forms the basis for the research paper I submitted to an international conference, as well as my BSc dissertation. It is primarily concerned with allowing 3D objects in AR to be manipulated with Six Degrees-Of-Freedom (6DOF) using simple touch gestures, without scarficiing granular control. The key aspects of this project are:",
+                "list" : [
+                    { "item" : "Novel interaction system using touch gestures and the user's position to determine the interaction and interaction axis" },
+                    { "item" : "Custom encoding and input recognition systems for touch gestures" },
+                    { "item" : "A conversion of the touch gestures to UI elements - supporting the same interactions" },
+                    { "item": "Two unique evaluation applications" }
+                ]
             },
             {
                 "heading" : "Project Description",
-                "text" : "I developed a bespoke system to encode and recognise unique touch gestures (as this was developed before the official release of Unity's new input system), with my system supporting tapping, tap and holding, dragging, and pinching for one and two fingers. Each interaction is assigned at least one gesture and categorised by not only by the touch gesture itself, but also the location on which it is performed (on or off the object). This encoding and detection system is also somewhat abstracted, allowing for minor variations of the gesture to be performed, whilst still recognising the correct input.",
+                "subheading" : "Touch Gesture Input Encoding and Recognition",
+                "text" : "The interaction system is unique in the fac that it supports 6DOF manipulation using simple touch gestures, and that it uses the user's perspective of the object to determine the axes that the user can manipulate the object on.",
                 "video" : "https://www.youtube.com/embed/_6X1hycDETM?"
             },
             {
-                "text" : "This system is unique in that the user's perspective of the object determines the axes that the user can manipulate the object on, meaning gestures are kept simple, as they can be re-used for the same interaction on multiple axes. "
+                "text" : "I developed a bespoke system to encode and recognise unique touch gestures (as this was developed before the official release of Unity's new input system), with my system supporting: ",
+                "list" : [
+                    {"item" : "Tapping" },
+                    {"item" : "Tapping and holding" },
+                    {"item" : "Dragging / swiping" },
+                    {"item" : "Pinching" }
+                ]
             },
             {
-                "heading" : "Additional Applications",
-                "text" : "To design and evaluate this interaction system two other applications were developed. The first recorded users touch gestures when performing a given interaction (e.g. scaling), and outputted as JSON file with data such as the number of fingers, and the position each frame of the fingers. With this being used to help encode and determine the gestures used by the interaction system.",
-                "imageSrc" : "./Images/All GES Tasks.gif",
-                "imageAlt" : "A gif showing various animations"
+                "text" : "Which allow for the 3D object to be translated, rotated, and scaled on all axis, using the same gestures. With translation and rotation supporting verbose and granular interactions with two different gestures. "
             },
             {
-                "text" : "The second was used for evaluation, with it being akin to a “Simon says” game, where users were timed when performing an interaction (e.g. moving the object into a square on the screen), when using different interaction methods. For this, I developed a UI based system which translated the touch gestures into UI elements, but still made use of the user's perspective to determine the available axis. This app compared the bespoke interaction system, to the same manipulation of a physical object, and the UI-based approach.",
+                "subheading" : "UI Input Method & Evaluation",
+                "text" : "For a comparative evaluation, I developed a UI system which made use of the user's position, but instead utilised UI elements instead of touch gestures to perform the interactions. ",
                 "video" : "https://www.youtube.com/embed/K8WMOohHseQ?"
+            },
+            {
+                "text" : "The evaluation of the input methods made use of a “Simon says” style game, where users were timed when performing a randomised interaction (e.g. moving the object into a square on the screen), using each of the interaction methods"
+            },
+            {
+                "text" : "Initially I also developed an application which recorded the user's touch gestures when performing a given interaction (e.g. scaling), and outputted as JSON file containing the number of fingers and the position each frame of the fingers. With this being used to help encode the gestures used by the interaction system."
+            },
+            {
+                "text" : "With the animations the users were viewing to perform their gestures to being shown below.",
+                "imageSrc" : "./Images/All GES Tasks.gif",
+                "imageAlt" : ""
             }
         ]
     },

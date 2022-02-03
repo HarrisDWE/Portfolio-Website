@@ -210,6 +210,14 @@ function addModalDescription(desc, container) {
             
             sectionContainer.appendChild(heading);
         }
+        //Add subheading
+        if (section.subheading != "" && section.subheading != null) {
+            let subheading = document.createElement("h4");
+            subheading.appendChild(document.createTextNode(section.subheading));
+            
+            sectionContainer.appendChild(subheading);
+        }
+
         // Add text
         if (section.text != "" && section.text != null) {
             let text = document.createElement("p");

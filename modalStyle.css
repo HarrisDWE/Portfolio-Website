@@ -10,7 +10,7 @@
     z-index: 1; /* Placed on top of rest of the page */
     
     /* Modal box location */
-    margin-top: var(--modal-box-top-padding); 
+    padding-top: var(--modal-box-top-padding); 
     /* margin-bottom: 10%; */
     left: 0;
     top: 0;
@@ -61,7 +61,8 @@
     padding: 2px 16px;
     background-color: var(--dark-colour-2);
     color: white;
-    /* position: absolute; */
+    /* position: fixed; */
+    /* width: 87.5% */
 }
 
 .modal-header h2 {
@@ -86,6 +87,10 @@
 
 .modal-desc-section h3 {
     margin: 1rem 0 0.5rem 0;
+}
+.modal-desc-section h4 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 .modal-desc-section p {
