@@ -162,6 +162,26 @@
             }
         ]
     },
+    {
+        "name" : "Unreal Engine 4 & C++ Course", 
+        "content" : [
+            { 
+                "heading": "Overview",
+                "text" : ""
+            }
+        ]
+    },
+
+
+    {
+        "name" : "Unity RPG Combat Creator Course", 
+        "content" : [
+            { 
+                "heading": "Overview",
+                "text" : "This was an exploration into developing a website from scratch using HTML, CSS, and JS, without making use of frameworks such as Bootstrap or JQuery. The most unique aspect about the site is that it utilises two JSON files to store and dynamically create new project cards, and their content, making adding new projects to the site far easier."
+            }
+        ]
+    },
 
 
     {
