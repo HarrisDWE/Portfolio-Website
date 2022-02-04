@@ -172,6 +172,10 @@
     .modal-container * p {
         font-size: 1.1rem;
     }
+
+    .modal-container * li {
+        font-size: 1.1rem;
+    }
     
     .modal-header h2 {
         font-size: 2rem;
