@@ -49,6 +49,7 @@
     float: right;
     font-size: 2.5rem;
     font-weight: bold;
+    padding-left: 1rem;
 }
 
 .close-button:hover, .close-button:focus {
