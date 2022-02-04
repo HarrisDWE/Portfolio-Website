@@ -136,7 +136,7 @@
                 "video" : "https://www.youtube.com/embed/_6X1hycDETM?"
             },
             {
-                "text" : "The interaction system is unique in the fact that it supports 6DOF manipulation using simple touch gestures, and that it uses the user's perspective of the object to determine the axes that the user can manipulate the object on.",
+                "text" : "The interaction system is unique in the fact that it supports 6DOF manipulation using simple touch gestures, and that it uses the user's perspective of the object to determine the axes that the user can manipulate the object on."
             },
             {
                 "text" : "I developed a bespoke system to encode and recognise unique touch gestures (as this was developed before the official release of Unity's new input system), with my system supporting: ",
