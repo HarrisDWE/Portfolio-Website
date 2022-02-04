@@ -9,7 +9,7 @@
             {
                 "text" : "Currently the key features are:",
                 "list" : [
-                    { "item": "Beskope systems for intuitive interactions using a variety of digital devices" },
+                    { "item": "Bespoke systems for intuitive interactions using a variety of digital devices" },
                     { "item" : "Automated and dynamic creation of Q&A UI elements" },
                     { "item" : "Accessible VR gameplay" },
                     { "item" : "Animated interactions with realistic digital devices"},
@@ -24,9 +24,9 @@
                 "imageAlt" : ""
             },
             { 
-                "text" : "To make the interactions as accessible as possible, I have developed an interaction UI system which allows users to navigate the UI / interact with devices in multiple ways, using: ",
+                "text" : "To make the interactions as accessible as possible (as officers are likely to have little to no VR experience), I have developed an interaction UI system which allows users to navigate the UI / interact with devices in multiple ways, using: ",
                 "list" : [
-                    { "item" : "Controller's joytick and buttons" },
+                    { "item" : "Controller's joystick and buttons" },
                     { "item": "Controller's triggers" },
                     { "item" : "Raycast from the other hand/controller" }
                 ],
@@ -39,7 +39,11 @@
                 "imageAlt" : ""
             },
             { 
-                "text" : "Officers are also able to review their performance in-game, utilising various (interactable) UI elements, with these UI elements being automatically updated based on the users performance.",
+                "text" : "Officers are also able to review their performance in-game, utilising various (interactable) UI elements, with these UI elements being automatically updated based on the users performance. With the UI currently showcasing",
+                "list" : [
+                    { "item" : "Number of correctly answered questions" },
+                    { "item" : "All incorrect responses (including the question, the incorrect response given, and the correct answer)" }
+                ],
                 "imageSrc" : "./Images/Questions.gif",
                 "imageAlt" : "" 
             },
@@ -56,7 +60,6 @@
             }
         ]
     },
-
 
     {
         "name" : "(WIP) Unreal Brawler Project", 
@@ -118,7 +121,7 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "This project forms the basis for the research paper I submitted to an international conference, as well as my BSc dissertation. It is primarily concerned with allowing 3D objects in AR to be manipulated with Six Degrees-Of-Freedom (6DOF) using simple touch gestures, without scarficiing granular control. The key aspects of this project are:",
+                "text" : "This project forms the basis for the research paper I submitted to an international conference, as well as my BSc dissertation. It is primarily concerned with allowing 3D objects in AR to be manipulated with Six Degrees-Of-Freedom (6DOF) using simple touch gestures, without sacrificing granular control. The key aspects of this project are:",
                 "list" : [
                     { "item" : "Novel interaction system using touch gestures and the user's position to determine the interaction and interaction axis" },
                     { "item" : "Custom encoding and input recognition systems for touch gestures" },
@@ -163,7 +166,6 @@
         ]
     },
 
-
     {
         "name" : "Portfolio Website", 
         "content" : [
@@ -188,13 +190,12 @@
         ]
     },
 
-
     {
         "name" : "Unreal Engine 4 & C++ Course", 
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "This course gave me a solid understanding of many C++ and Unreal Engine 4 principles, which I then took futher to future projects. The coursed touched on several key areas such as:",
+                "text" : "This course gave me a solid understanding of many C++ and Unreal Engine 4 principles, which I then took further to future projects. The coursed touched on several key areas such as:",
                 "list" : [
                     { "item" : "Unreal tools and Unreal specific C++" },
                     { "item" : "Player input handling and developing gameplay features" },
@@ -211,8 +212,8 @@
                     { "item" : "Movement mechanics" },
                     { "item" : "Shooting mechanics (raycasting, hit detection, sounds, and visuals)" },
                     { "item" : "Keyboard & mouse / controller input" },
-                    { "item" : "AI which shoot the player and investigate on sightloss" },
-                    { "item" : "Working with animations, and creating blendspaces, using aim offsets, etc." }
+                    { "item" : "AI which shoot the player and investigate on sight loss" },
+                    { "item" : "Working with animations, and creating blend spaces, using aim offsets, etc." }
                 ],
                 "imageSrc" : "./Images/UECourse Movement.gif"
             },
@@ -223,11 +224,10 @@
             },
             {
                 "subheading" : "Course Takeaways",
-                "text" : "Completing the course gave me an solid understanding of how to develop games using Unreal Engine 4, which I later took futher in subsequent projects. The course taught me how to program gameplay systems within Unreal Engine, using C++, as well as how to integrate these gameplay systems with other aspects of the project, such as AI, UI, 'game modes', etc."
+                "text" : "Completing the course gave me an solid understanding of how to develop games using Unreal Engine 4, which I later took further in subsequent projects. The course taught me how to program gameplay systems within Unreal Engine, using C++, as well as how to integrate these gameplay systems with other aspects of the project, such as AI, UI, 'game modes', etc."
             }
         ]
     },
-
 
     {
         "name" : "Unity RPG Combat Creator Course", 
@@ -237,9 +237,9 @@
                 "text" : "This course was focused on teaching more advanced game development topics and programming patterns, with a focus on clean, optimised, and maintainable code. Some of the topics covered include:",
                 "list" : [
                     { "item" : "Using scriptable objects to define weapons, enemy classes, and player progression" },
-                    { "item" : "Following programming pattterns and best practicies, (e.g. avoiding circular dependencies, using singletons, the observer pattern, etc.)" },
+                    { "item" : "Following programming patterns and best practices, (e.g. avoiding circular dependencies, using singletons, the observer pattern, etc.)" },
                     { "item" : "AI using custom behaviour" },
-                    { "item" : "Player and AI movement using navmeshes" }
+                    { "item" : "Player and AI movement using nav meshes" }
                 ],
                 "imageSrc" : "./Images/RPG Bow Combat.gif"
             },
@@ -247,8 +247,8 @@
                 "heading" : "Course Content",
                 "text" : "The game created when following this course is a Diablo style RPG, using mouse controls, to move around, pick-up objects and attack enemies. With the key features of the game including:",
                 "list" : [
-                    { "item" : "A combat systen which supports multiple weapons and animations, including both melee and projectiles" },
-                    { "item" : "Player progression system (stat improvements beased on XP gain)" },
+                    { "item" : "A combat system which supports multiple weapons and animations, including both melee and projectiles" },
+                    { "item" : "Player progression system (stat improvements based on XP gain)" },
                     { "item" : "Enemy AI behaviour (e.g. following pre-defined routes, custom chase and attacking behaviour)" },
                     { "item" : "A variety of enemy types built using a modular system" },
                     { "item" : "Modular weapon pick-up and creation system" }
@@ -263,3 +263,4 @@
         ]
     }
 ]
+
