@@ -133,7 +133,7 @@
             {
                 "heading" : "Project Description",
                 "subheading" : "Touch Gesture Input Encoding and Recognition",
-                "text" : "The interaction system is unique in the fac that it supports 6DOF manipulation using simple touch gestures, and that it uses the user's perspective of the object to determine the axes that the user can manipulate the object on.",
+                "text" : "The interaction system is unique in the fact that it supports 6DOF manipulation using simple touch gestures, and that it uses the user's perspective of the object to determine the axes that the user can manipulate the object on.",
                 "video" : "https://www.youtube.com/embed/_6X1hycDETM?"
             },
             {
@@ -220,12 +220,12 @@
             },
             {
                 "subheading" : "Other Games",
-                "text" : "The course had several other game projects to complete, which covered several topics such as diving into the fundamentals of character movement. With one game being to create a basic tank character, and rotating AI which shoot at the player.",
+                "text" : "The course had several other game projects to complete, which covered several topics such as diving into the fundamentals of character movement. With one game being to create a basic tank character, and stationary AI that rotate to shoot projectiles at the player.",
                 "imageSrc" : "./Images/UECourse Tank.gif"
             },
             {
                 "subheading" : "Course Takeaways",
-                "text" : "Completing the course gave me an solid understanding of how to develop games using Unreal Engine 4, which I later took further in subsequent projects. The course taught me how to program gameplay systems within Unreal Engine, using C++, as well as how to integrate these gameplay systems with other aspects of the project, such as AI, UI, 'game modes', etc."
+                "text" : "Completing the course gave me an solid understanding of how to develop games using Unreal Engine 4, which I have subsequently improved by developing more games within Unreal Engine 4 (e.g. the Unreal Brawler game). The course taught me how to program gameplay systems within Unreal Engine, using C++, as well as how to integrate these gameplay systems with other aspects of the project, such as AI, UI, animations, etc."
             }
         ]
     },
@@ -235,7 +235,7 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "This course was focused on teaching more advanced game development topics and programming patterns, with a focus on clean, optimised, and maintainable code. Some of the topics covered include:",
+                "text" : "This course was focused on teaching more advanced game development topics and programming patterns, with a focus on creating clean, optimised, and maintainable code. Some of the topics covered include:",
                 "list" : [
                     { "item" : "Using scriptable objects to define weapons, enemy classes, and player progression" },
                     { "item" : "Following programming patterns and best practices, (e.g. avoiding circular dependencies, using singletons, the observer pattern, etc.)" },
@@ -252,16 +252,17 @@
                     { "item" : "Player progression system (stat improvements based on XP gain)" },
                     { "item" : "Enemy AI behaviour (e.g. following pre-defined routes, custom chase and attacking behaviour)" },
                     { "item" : "A variety of enemy types built using a modular system" },
-                    { "item" : "Modular weapon pick-up and creation system" }
+                    { "item" : "Modular weapon creation and pick-up system" }
                 ],
                 "imageSrc" : "./Images/RPG Sword Combat.gif"
             },
             {
                 "subheading" : "Course Takeaways",
-                "text" : "Completing the course gave me helped to further improve my knowledge of design and programming patterns, which I have taken forward into future projects (e.g. VR Training House), which help me to create optimised and maintainable code. It has also given me insight into developing a larger project and how to build strong foundational systems that effectively support future expansion.",
+                "text" : "Completing the course helped to further improve my knowledge of design and programming patterns, which I have taken forward into future projects (e.g. VR Training House), enabling me to create optimised and maintainable code. It has also given me insight into developing a larger project and how to build strong foundational systems that effectively support future expansion.",
                 "imageSrc" : "./Images/RPG Pickup.gif"
             }
         ]
     }
 ]
+
 
