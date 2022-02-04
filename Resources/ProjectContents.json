@@ -125,6 +125,7 @@
                 "list" : [
                     { "item" : "Novel interaction system using touch gestures and the user's position to determine the interaction and interaction axis" },
                     { "item" : "Custom encoding and input recognition systems for touch gestures" },
+                    { "item" : "Translation, rotation, and scaling on all 3 axes" },
                     { "item" : "A conversion of the touch gestures to UI elements - supporting the same interactions" },
                     { "item": "Two unique evaluation applications" }
                 ]
