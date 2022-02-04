@@ -71,6 +71,7 @@ function createCardElements(projectIndex) {
 
     projectName.classList.add("project-card-title");
     projectImage.classList.add("project-card-image");
+    projectImage.setAttribute("loading", "lazy");
     projectLinksP.classList.add("project-card-links");
     projectLinks.classList.add("p-links");
     projectDetailsButton.classList.add("project-button")
@@ -245,7 +246,7 @@ function addModalDescription(desc, container) {
             if (section.imageAlt != "" && section.imageAlt != null) {
                 img.alt = section.imageAlt;
             }
-
+            img.setAttribute("loading", "lazy");
             sectionContainer.appendChild(img);
         }
         //Add video
