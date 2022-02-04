@@ -4,7 +4,7 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "Currently being developed as part of a 10-week placement (starting 17/01/22) at the Lancashire Constabulary, using Unity 2021, C#, and the XR Interaction Toolkit, with support for all common 6DOF VR headsets."
+                "text" : "Currently being developed as part of a 10-week placement (starting 17/01/22) at the Lancashire Constabulary, using Unity 2021, C#, and the XR Interaction Toolkit, with support for all common 6DOF VR headsets. The project is being developed with clean and maintainable code in mind making extensive use of several design patterns."
             },
             {
                 "text" : "Currently the key features are:",
@@ -19,8 +19,8 @@
             { 
                 "heading": "Project Description",
                 "subheading" : "Gameplay / Device Interactions",
-                "text" : "Currently, the project offers several unique and animated interactions with various digital objects, for instance turning devices on/off, browsing their contents, etc. ",
-                "imageSrc" : "./Images/Tablet.gif",
+                "text" : "Currently, the project offers several unique and animated interactions with various digital objects, for instance opening/closing a laptop, turning devices on/off, browsing their contents, etc. ",
+                "imageSrc" : "./Images/Laptop Animation.gif",
                 "imageAlt" : ""
             },
             { 
@@ -30,7 +30,7 @@
                     { "item": "Controller's triggers" },
                     { "item" : "Raycast from the other hand/controller" }
                 ],
-                "imageSrc" : "./Images/Tablet.gif",
+                "imageSrc" : "./Images/UI Demo.gif",
                 "imageAlt" : ""
             },
             {
@@ -72,7 +72,7 @@
                 ]
             },
             {
-                "text" : "I was responsible for creating the AI systems, which makes use of an custom AI controller, behaviour trees, blackboards, and well as code written in both C++ and blueprints. ",
+                "text" : "I was responsible for creating the AI systems, which makes use of an custom AI controller, behaviour trees, blackboards, and well as custom behaviour tree tasks and services written in both C++ and blueprints.",
                 "video" : "https://www.youtube.com/embed/O9Tb0yvup7M?"
             },
             {
@@ -162,6 +162,33 @@
             }
         ]
     },
+
+
+    {
+        "name" : "Portfolio Website", 
+        "content" : [
+            { 
+                "heading": "Overview",
+                "text" : "This was an exploration into developing a website from scratch using HTML, CSS, and JS, without making use of frameworks such as Bootstrap or JQuery. The most unique aspect about the site is that it utilises two JSON files to store and dynamically create new project cards, and their content, making adding new projects to the site far easier."
+            },
+            {
+                "text" : "The website is currently being hosted using GitHub Pages and is linked to a custom domain \"DanHarris.Online\". Testing before deployment is done using node.js and the \"live-server\" addon."
+            },
+            { 
+                "heading": "Project Description",
+                "text" : "I decided to not use any web frameworks or cite builders to build this website as I thought it would be an interesting challenge and allow me to improve my knowledge of HTML, CSS and JS. The website is inspired by several other portfolio sites, with the design and layout also being heavily influenced by that of the Steam Deck website."    
+            },
+            { 
+                "text" : "The most notable aspect to the website is its dynamic loading of project data, with all project cards, and their content being loaded from two JSON files. A JS script I developed parses the JSON files and automatically creates the project cards and its contents (displayed in the modal), with the idea being to make adding new projects to the website a painless process.",
+                "video" : "https://www.youtube.com/embed/KwUOzOsLVMQ?"
+            },
+            {
+                "text" : "Whilst it currently is at an acceptable state, I still plan on improving the code as well as iterating upon its design and functionality. For instance, I intended for the dynamic project loading to allow for even more elements and an even more flexible design of the project card / contents. I also plan on creating the functionality for me to upload a text file and for the website automatically parse it and add it to its respective JSON file, making the addition of projects even easier."
+            }
+        ]
+    },
+
+
     {
         "name" : "Unreal Engine 4 & C++ Course", 
         "content" : [
@@ -207,40 +234,31 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "RPG.",
+                "text" : "This course was focused on teaching more advanced game development topics and programming patterns, with a focus on clean, optimised, and maintainable code. Some of the topics covered include:",
                 "list" : [
-                    { "item" : "" }
+                    { "item" : "Using scriptable objects to define weapons, enemy classes, and player progression" },
+                    { "item" : "Following programming pattterns and best practicies, (e.g. avoiding circular dependencies, using singletons, the observer pattern, etc.)" },
+                    { "item" : "AI using custom behaviour" },
+                    { "item" : "Player and AI movement using navmeshes" }
                 ],
-                "imageSrc" : ""
+                "imageSrc" : "./Images/RPG Bow Combat.gif"
             },
             {
                 "heading" : "Course Content",
-                "text" : ""
-            }
-        ]
-    },
-
-
-    {
-        "name" : "Portfolio Website", 
-        "content" : [
-            { 
-                "heading": "Overview",
-                "text" : "This was an exploration into developing a website from scratch using HTML, CSS, and JS, without making use of frameworks such as Bootstrap or JQuery. The most unique aspect about the site is that it utilises two JSON files to store and dynamically create new project cards, and their content, making adding new projects to the site far easier."
+                "text" : "The game created when following this course is a Diablo style RPG, using mouse controls, to move around, pick-up objects and attack enemies. With the key features of the game including:",
+                "list" : [
+                    { "item" : "A combat systen which supports multiple weapons and animations, including both melee and projectiles" },
+                    { "item" : "Player progression system (stat improvements beased on XP gain)" },
+                    { "item" : "Enemy AI behaviour (e.g. following pre-defined routes, custom chase and attacking behaviour)" },
+                    { "item" : "A variety of enemy types built using a modular system" },
+                    { "item" : "Modular weapon pick-up and creation system" }
+                ],
+                "imageSrc" : "./Images/RPG Sword Combat.gif"
             },
             {
-                "text" : "The website is currently being hosted using GitHub Pages and is linked to a custom domain \"DanHarris.Online\". Testing before deployment is done using node.js and the \"live-server\" addon."
-            },
-            { 
-                "heading": "Project Description",
-                "text" : "I decided to not use any web frameworks or cite builders to build this website as I thought it would be an interesting challenge and allow me to improve my knowledge of HTML, CSS and JS. The website is inspired by several other portfolio sites, with the design and layout also being heavily influenced by that of the Steam Deck website."    
-            },
-            { 
-                "text" : "The most notable aspect to the website is its dynamic loading of project data, with all project cards, and their content being loaded from two JSON files. A JS script I developed parses the JSON files and automatically creates the project cards and its contents (displayed in the modal), with the idea being to make adding new projects to the website a painless process.",
-                "video" : "https://www.youtube.com/embed/KwUOzOsLVMQ?"
-            },
-            {
-                "text" : "Whilst it currently is at an acceptable state, I still plan on improving the code as well as iterating upon its design and functionality. For instance, I intended for the dynamic project loading to allow for even more elements and an even more flexible design of the project card / contents. I also plan on creating the functionality for me to upload a text file and for the website automatically parse it and add it to its respective JSON file, making the addition of projects even easier."
+                "subheading" : "Course Takeaways",
+                "text" : "Completing the course gave me helped to further improve my knowledge of design and programming patterns, which I have taken forward into future projects (e.g. VR Training House), which help me to create optimised and maintainable code. It has also given me insight into developing a larger project and how to build strong foundational systems that effectively support future expansion.",
+                "imageSrc" : "./Images/RPG Pickup.gif"
             }
         ]
     }
