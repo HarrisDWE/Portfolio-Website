@@ -1,9 +1,9 @@
 [
     {
         "name" : "(WIP) VR Training House", 
-        "description" : "A VR experience used to train officers within the Lancashire Constabulary on how to interact with digital devices. Focusing on the usability and accessibility of gameplay and a maintainable codebase.",
+        "description" : "A VR experience used to train officers within the Lancashire Constabulary on how to interact with digital devices. Focusing on the usability and accessibility of gameplay, a maintainable codebase, and a designer friendly approach.",
         "tech" : "Unity | C# | XR Interaction Toolkit",
-        "imageSrc" : "../Images/VR House Cover Image.jpg",
+        "imageSrc" : "../Images/VR House Cover Image.png",
         "imageAlt" : "VR digital training house cover image",
         "linkText" : "",
         "linkSrc" : ""

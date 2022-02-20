@@ -4,57 +4,69 @@
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "Currently being developed as part of a 10-week placement (starting 17/01/22) at the Lancashire Constabulary, using Unity 2021, C#, and the XR Interaction Toolkit, with support for all common 6DOF VR headsets. The project is being developed with clean and maintainable code in mind making extensive use of several design patterns."
+                "text" : "Currently being developed as part of a 10-week placement (starting 17/01/22) at the Lancashire Constabulary, using Unity 2021, C#, and the XR Interaction Toolkit, supporting all common 6DOF VR headsets."
             },
             {
-                "text" : "Currently the key features are:",
+                "text" : "The project is being developed with clean and maintainable code in mind, whilst making extensive use of programming design patterns, as well as ensuring that the project itself is designer friendly."
+            },
+            {
+                "text" : "Currently the project features:",
                 "list" : [
                     { "item": "Bespoke systems for intuitive interactions using a variety of digital devices" },
-                    { "item" : "Automated and dynamic creation of Q&A UI elements" },
+                    { "item" : "Automated and adaptive creation of Q&A UI elements" },
                     { "item" : "Accessible VR gameplay" },
                     { "item" : "Animated interactions with realistic digital devices"},
+                    { "item" : "Physical interactions" },
+                    { "item" : "Randomised item spawning at pre-defined locations" },
                     { "item" : "Performance scoring and review systems" }
                 ]
             },
             { 
                 "heading": "Project Description",
                 "subheading" : "Gameplay / Device Interactions",
-                "text" : "Currently, the project offers several unique and animated interactions with various digital objects, for instance opening/closing a laptop, turning devices on/off, browsing their contents, etc. ",
-                "imageSrc" : "./Images/Laptop Animation.gif",
-                "imageAlt" : ""
+                "text" : "The project offers several unique and animated interactions with an array of digital devices, for instance opening/closing a laptop, turning devices on/off, browsing their contents, etc. "
             },
             { 
-                "text" : "To make the interactions as accessible as possible (as officers are likely to have little to no VR experience), I have developed an interaction UI system which allows users to navigate the UI / interact with devices in multiple ways, using: ",
+                "text" : "To make the interactions as accessible as possible, I have developed an interaction UI system which allows users to navigate the UI / interact with devices in multiple ways, using: ",
                 "list" : [
                     { "item" : "Controller's joystick and buttons" },
                     { "item": "Controller's triggers" },
                     { "item" : "Raycast from the other hand/controller" }
                 ],
-                "imageSrc" : "./Images/UI Demo.gif",
-                "imageAlt" : ""
+                "video" : "./Videos/VR House UI Demo.mp4"
             },
             {
-                "text" : "Officers are graded on their performance in multiple ways, with the primary metric being their responses to a set of device oriented questions. The UI for these questions are automatically populated and made functional using custom code and scriptable objects.",
-                "imageSrc" : "./Images/Question Interaction.gif",
-                "imageAlt" : ""
+                "text" : "I have also developed a custom UI system used for multiple-choice questions, which includes:",
+                "list" : [
+                    { "item" : "Dynamic creation and population of UI elements based on (designer friendly) scriptable objects" },
+                    { "item" : "Support for single answer and multiple answer questions" },
+                    { "item" : "Randomised placement of answers" },
+                    { "item" : "Variations for grabbable and static digital devices" }
+                ],
+                "video" : "./Videos/VR House UI Combined.mp4"
+            },  
+            {
+                "text" : "Digital devices are spawned randomly at one of several pre-determined locations, encouraging officers to thoroughly investigate the environment",
+                "video" : "./Videos/VR House Spawning.mp4"
+            },
+            {
+                "text" : "Physical interactions are also a key part of the experience, with officers having to open doors, cupboards, drawers, etc. in order to locate all of the digital devices.",
+                "video" : "./Videos/VR House Physical Interaction Alt.mp4"
             },
             { 
                 "text" : "Officers are also able to review their performance in-game, utilising various (interactable) UI elements, with these UI elements being automatically updated based on the users performance. With the UI currently showcasing",
                 "list" : [
-                    { "item" : "Number of correctly answered questions" },
-                    { "item" : "All incorrect responses (including the question, the incorrect response given, and the correct answer)" }
+                    { "item" : "The number of correctly answered questions" },
+                    { "item" : "All of the incorrect responses (including the question, the incorrect response(s) given, and the correct answer(s)" },
+                    { "item" : "The amount of 'hidden' digital items discovered" }
                 ],
-                "imageSrc" : "./Images/Questions.gif",
-                "imageAlt" : "" 
+                "video" : "./Videos/VR House Question Review.mp4"
             },
             { 
                 "text" : "In the future, several more features are planned, for instance:",
                 "list" : [
-                    { "item" : "Realistic VR house environment" },
-                    { "item" : "Physically based door, cupboard, and draw interactions" },
-                    { "item" : "Dynamic and randomised placement of key objects and digital items" },
+                    { "item" : "Believable VR house environment" },
                     { "item" : "Performance report generation used for ISO accreditation" },
-                    { "item" : "Oculus Quest/Quest 2 Standalone application"},
                     { "item" : "(3DOF) Pico G2 Port" }
                 ]
             }
@@ -266,5 +278,3 @@
         ]
     }
 ]
-
-
