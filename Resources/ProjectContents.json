@@ -7,15 +7,12 @@
                 "text" : "Currently being developed as part of a 10-week placement (starting 17/01/22) at the Lancashire Constabulary, using Unity 2021, C#, and the XR Interaction Toolkit, supporting all common 6DOF VR headsets."
             },
             {
-                "text" : "The project is being developed with clean and maintainable code in mind, whilst making extensive use of programming design patterns, as well as ensuring that the project itself is designer friendly."
-            },
-            {
                 "text" : "Currently the project features:",
                 "list" : [
                     { "item": "Bespoke systems for intuitive interactions using a variety of digital devices" },
-                    { "item" : "Automated and adaptive creation of Q&A UI elements" },
-                    { "item" : "Accessible VR gameplay" },
+                    { "item" : "Custom Q&A UI system supporting multiple question types and dynamic creation of UI elements" },
                     { "item" : "Animated interactions with realistic digital devices"},
+                    { "item" : "Accessible VR gameplay" },
                     { "item" : "Physical interactions" },
                     { "item" : "Randomised item spawning at pre-defined locations" },
                     { "item" : "Performance scoring and review systems" }
@@ -61,6 +58,9 @@
                     { "item" : "The amount of 'hidden' digital items discovered" }
                 ],
                 "video" : "./Videos/VR House Question Review.mp4"
+            },
+            {
+                "text" : "The project is being developed with clean and maintainable code in mind, whilst making extensive use of programming design patterns, as well as ensuring that the project itself is designer friendly."
             },
             { 
                 "text" : "In the future, several more features are planned, for instance:",
