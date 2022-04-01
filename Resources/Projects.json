@@ -3,7 +3,7 @@
         "name" : "(WIP) VR Training House", 
         "description" : "A VR experience used to train officers within the Lancashire Constabulary on how to interact with digital devices. Focusing on the usability and accessibility of gameplay, a maintainable codebase, and a designer friendly approach.",
         "tech" : "Unity | C# | XR Interaction Toolkit",
-        "imageSrc" : "../Images/VR House Cover Image.png",
+        "imageSrc" : "../Images/VR House Cover Image.jpg",
         "imageAlt" : "VR digital training house cover image",
         "linkText" : "",
         "linkSrc" : ""
@@ -39,8 +39,8 @@
         "name" : "Unreal Engine 4 & C++ Course", 
         "description" : "This is a showcase of some of the games I developed and techniques learned as part of the Unreal Engine C++ Developer course.",
         "tech" : "Unreal Engine 4 | C++ | Blueprints",
-        "imageSrc" : "../Images/UE Course Cover Image.png",
-        "imageAlt" : "Object manipulation cover image",
+        "imageSrc" : "../Images/UE Course Cover Image.jpg",
+        "imageAlt" : "Unreal Engine 4 course cover image",
         "linkText" : "Course",
         "linkSrc" : "https://www.udemy.com/course/unrealcourse/"
     },
@@ -48,8 +48,8 @@
         "name" : "Unity RPG Combat Creator Course", 
         "description" : "This is a showcase of some of the game I developed and techniques learned as part of the Unity RPG Core Combat Creator course.",
         "tech" : "Unity | C# ",
-        "imageSrc" : "../Images/RPG Cover Image.png",
-        "imageAlt" : "Object manipulation cover image",
+        "imageSrc" : "../Images/RPG Course Cover Image.jpg",
+        "imageAlt" : "Unity RPG course cover image",
         "linkText" : "Course",
         "linkSrc" : "https://www.udemy.com/course/unityrpg/"
     }
