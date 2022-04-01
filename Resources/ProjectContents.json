@@ -1,74 +1,67 @@
 [
     {
-        "name" : "(WIP) VR Training House", 
+        "name" : "VR Police Training Experience", 
         "content" : [
             { 
                 "heading": "Overview",
-                "text" : "Currently being developed as part of a 10-week placement (starting 17/01/22) at the Lancashire Constabulary, using Unity 2021, C#, and the XR Interaction Toolkit, supporting all common 6DOF VR headsets."
+                "text" : "Recently completed as part of a 10-week Placement (January-March 2022) at the Lancashire Constabulary. The project was developed using Unity 2021.2, C#, and the XR Interaction Toolkit, and supports all common (6DOF) VR headsets, including a dedicated Oculus Quest 2 port."
             },
             {
-                "text" : "Currently the project features:",
+                "text" : "The experience includes:",
                 "list" : [
-                    { "item": "Bespoke systems for intuitive interactions using a variety of digital devices" },
-                    { "item" : "Custom Q&A UI system supporting multiple question types and dynamic creation of UI elements" },
-                    { "item" : "Animated interactions with realistic digital devices"},
-                    { "item" : "Accessible VR gameplay" },
-                    { "item" : "Physical interactions" },
-                    { "item" : "Randomised item spawning at pre-defined locations" },
-                    { "item" : "Performance scoring and review systems" }
+                    { "item": "A bespoke interaction system supporting 25 unique interactions for 10 digital devices" },
+                    { "item" : "A custom Q&A system with multiple question types and the dynamic creation of UI elements" },
+                    { "item" : "Accessible and intuitive VR gameplay - teleporting, smooth locomotion, snap turning, etc." },
+                    { "item" : "Physics-based interactions with furniture" },
+                    { "item" : "Performance scoring and review systems (for ISO accreditation)" },
+                    { "item" : "Randomised device spawning at pre-defined locations" },
+                    { "item" : "A realistic house environment" }
                 ]
             },
             { 
                 "heading": "Project Description",
                 "subheading" : "Gameplay / Device Interactions",
-                "text" : "The project offers several unique and animated interactions with an array of digital devices, for instance opening/closing a laptop, turning devices on/off, browsing their contents, etc. "
+                "text" : "The experience offers 25+ unique and animated interactions with 10 of digital devices, for instance, turning devices on/off, covering objects, browsing their contents, etc. ",
+                "video" : "./Videos/VR House Device Interaction.mp4"
             },
             { 
-                "text" : "To make the interactions as accessible as possible, I have developed an interaction UI system which allows users to navigate the UI / interact with devices in multiple ways, using: ",
+                "text" : "To create accessible interactions, I developed a UI system which enables users to navigate the UI / interact with devices in multiple ways, for example, using: ",
                 "list" : [
                     { "item" : "Controller's joystick and buttons" },
-                    { "item": "Controller's triggers" },
+                    { "item" : "Controller's triggers" },
                     { "item" : "Raycast from the other hand/controller" }
-                ],
-                "video" : "./Videos/VR House UI Demo.mp4"
+                ]
             },
             {
-                "text" : "I have also developed a custom UI system used for multiple-choice questions, which includes:",
+                "text" : "Physics-based interactions play a key part in the experience, with officers needing to open doors, cupboards, and drawers to locate various digital devices. With all these interactions being driven using Unity's physics system.",
+                "video" : "./Videos/VR House Physics Interactions 720p.mp4"
+            },
+            {
+                "text" : "I also created a bespoke Q&A system to test officers' knowledge, with the system supporting:",
                 "list" : [
-                    { "item" : "Dynamic creation and population of UI elements based on (designer friendly) scriptable objects" },
+                    { "item" : "Dynamic creation of UI elements based on (designer friendly) scriptable objects" },
                     { "item" : "Support for single answer and multiple answer questions" },
                     { "item" : "Randomised placement of answers" },
                     { "item" : "Variations for grabbable and static digital devices" }
                 ],
-                "video" : "./Videos/VR House UI Combined.mp4"
+                "video" : "./Videos/VR House Q&A UI 720p.mp4"
             },  
             {
-                "text" : "Digital devices are spawned randomly at one of several pre-determined locations, encouraging officers to thoroughly investigate the environment",
-                "video" : "./Videos/VR House Spawning.mp4"
+                "text" : "To make this system designer friendly, all question and answer data is read from scriptable objects which are easily altered by a designer"
             },
             {
-                "text" : "Physical interactions are also a key part of the experience, with officers having to open doors, cupboards, drawers, etc. in order to locate all of the digital devices.",
-                "video" : "./Videos/VR House Physical Interaction Alt.mp4"
+                "text" : "Digital devices are spawned randomly at one of several pre-determined locations, encouraging officers to thoroughly investigate the environment",
+                "video" : "./Videos/VR House Spawning 720p.mp4"
             },
             { 
-                "text" : "Officers are also able to review their performance in-game, utilising various (interactable) UI elements, with these UI elements being automatically updated based on the users performance. With the UI currently showcasing",
+                "text" : "A report is generated based off the officers performance within the experience (for ISO accreditation). This report is constantly updated throughout, and is stored on the device, with officers also having the option to review it in-game. The report includes:",
                 "list" : [
                     { "item" : "The number of correctly answered questions" },
-                    { "item" : "All of the incorrect responses (including the question, the incorrect response(s) given, and the correct answer(s)" },
-                    { "item" : "The amount of 'hidden' digital items discovered" }
+                    { "item" : "The incorrect response(s) the officers gave to a given question, and what its correct answers are" },
+                    { "item" : "The time taken to complete the experience" },
+                    { "item" : "The amount of 'hidden' digital devices discovered" }
                 ],
                 "video" : "./Videos/VR House Question Review.mp4"
-            },
-            {
-                "text" : "The project is being developed with clean and maintainable code in mind, whilst making extensive use of programming design patterns, as well as ensuring that the project itself is designer friendly."
-            },
-            { 
-                "text" : "In the future, several more features are planned, for instance:",
-                "list" : [
-                    { "item" : "Believable VR house environment" },
-                    { "item" : "Performance report generation used for ISO accreditation" },
-                    { "item" : "(3DOF) Pico G2 Port" }
-                ]
             }
         ]
     },
@@ -126,8 +119,6 @@
             }
         ]
     },
-    
-
     {
         "name" : "3D Object Manipulation for Mobile AR (BSc Project)", 
         "content" : [
@@ -278,3 +269,4 @@
         ]
     }
 ]
+
