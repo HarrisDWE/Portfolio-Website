@@ -8,10 +8,6 @@ function setupModals() {
     let modals = document.getElementsByClassName("modal-container");
     let closeButtons = document.getElementsByClassName("close-button");
 
-    // console.log("Project Buttons: " + projectButtons.length);
-    // console.log("Modals: " + projectButtons.length);
-    // console.log("Close Buttons: " + closeButtons.length);
-
     if (projectButtons.length == modals.length) {
         for (i = 0; i < projectButtons.length; i++) {
     
