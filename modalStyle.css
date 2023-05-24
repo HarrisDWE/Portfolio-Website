@@ -109,8 +109,8 @@
     margin: 1rem auto;
 }
 
-/* Taken from: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
-.modal-desc-section * iframe {
+/* Taken from: https://www.w3schools.com/howto/howto_css_responsive_videos.asp */
+.modal-desc-section * video,  .modal-desc-section * iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -121,7 +121,7 @@
     border: none;
 }
 
-.iframe-container {
+.video-container {
     position: relative;
     overflow: hidden;
     width: var(--video-width-desktop);
@@ -163,7 +163,7 @@
         width: var(--video-width-mobile);
     }
 
-    .iframe-container {
+    .video-container {
         width: var(--video-width-mobile);
         padding-top: calc(var(--video-width-mobile) * 0.5625) ; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     }
